@@ -1,0 +1,337 @@
+\mode<presentation>
+
+
+\NeedsTeXFormat{LaTeX2e}
+%\ProvidesPackage{multiaudience}
+%[2015/08/02 v1.02 Generating versions for different audiences from the
+%same source]
+\providecommand*\CurrentAudience{default}
+\def\DefCurrentAudience#1{\def\CurrentAudience{#1}}
+\newif\if@MULTAU@shown
+\@MULTAU@showntrue
+\newif\if@MULTAU@include
+\@MULTAU@includetrue
+\RequirePackage{xkeyval}
+\define@key{MULTAU}{-}[]{\@MULTAU@showntrue\@MULTAU@includefalse}
+\def\SetNewAudience#1{%
+  \define@key{MULTAU}{#1}[]{%
+    \def\@MULTAU@currkey{#1}%
+    \ifx\@MULTAU@currkey\CurrentAudience\relax
+      \if@MULTAU@include
+        \@MULTAU@showntrue
+      \else
+        \@MULTAU@shownfalse
+      \fi
+    \fi}%
+}
+\long\def\showto#1#2{\@MULTAU@shownfalse\@MULTAU@includetrue
+  \setkeys{MULTAU}{#1}%
+  \if@MULTAU@shown#2\fi
+  \@MULTAU@showntrue\@MULTAU@includetrue}
+\RequirePackage{environ}
+\NewEnviron{shownto}[1]{%
+  \@MULTAU@shownfalse\@MULTAU@includetrue
+  \setkeys{MULTAU}{#1}%
+  \if@MULTAU@shown\BODY\fi}{\@MULTAU@showntrue\@MULTAU@includetrue}
+\def\DefMultiaudienceCommand#1#2{\long\def#1##1##2{\showto{##1}{#2{##2}}}}
+\DefMultiaudienceCommand{\Footnote}{\footnote}
+\def\NewMultiaudienceSectionEnv#1#2{%
+  \NewEnviron{#1}[1]{%
+    \@MULTAU@shownfalse\@MULTAU@includetrue
+    \setkeys{MULTAU}{##1}%
+    \if@MULTAU@shown\expandafter#2\BODY\fi}%
+  {\@MULTAU@showntrue\@MULTAU@includetrue}}
+\NewMultiaudienceSectionEnv{Section}{\section}
+\NewMultiaudienceSectionEnv{Subsection}{\subsection}
+\NewMultiaudienceSectionEnv{Subsubsection}{\subsubsection}
+\NewMultiaudienceSectionEnv{Paragraph}{\paragraph}
+\NewMultiaudienceSectionEnv{Subparagraph}{\subparagraph}
+%\endinput
+%%
+%% End of file `multiaudience.sty'.
+
+
+% Requirement
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{ifthen}
+\RequirePackage{tcolorbox}
+\RequirePackage{listings}
+\RequirePackage{pgf}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  %basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  %captionpos=b,                    % sets the caption-position to bottom
+  %commentstyle=\bfseries,    % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  %firstnumber=1000,                % start line enumeration with line 1000
+  %frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  %language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  %numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  %numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  %stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  %stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces  
+  %morecomment=[l][\color{red}\bfseries]{***}
+  morecomment=[l][\color{black}\itshape]{\%},
+  morecomment=[l][\color{blue}\bfseries]{**},
+  morecomment=[l][\color{red}\bfseries]{***},
+  morecomment=[l][\color{black}\bfseries]{****},
+}
+
+\setbeamersize{text margin left=5mm,text margin right=5mm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+
+%%% Colors
+%\definecolor{MINESBlue}{RGB}{0,94,158}
+\definecolor{MINESBlue}{RGB}{0,103,217}
+\definecolor{LightGray}{RGB}{217,217,217}
+\definecolor{Gray}{RGB}{178,178,178}
+\definecolor{DarkGray}{RGB}{140,140,140}
+\definecolor{DarkDarkGray}{RGB}{92,92,92}
+
+\newtcolorbox{ZsetFileBox}[1]{
+  colback=LightGray,
+  colbacktitle=DarkGray,
+  coltitle=black,
+  colframe=black,
+  boxrule=1pt,
+  titlerule=.5pt,
+  arc=5pt,
+  title={\strut#1},
+  boxsep=1pt,
+  left=7pt,
+  right=7pt,
+  top=0pt,
+  bottom=0pt
+}
+\pgfkeys{
+  /ZsetFile/.cd,
+  title/.initial={nom de fichier},
+  filename/.initial={calcul.inp},
+  firstline/.initial={1},
+  lastline/.initial={1000},
+}
+
+
+\newcommand{\ZsetFile}[1][]{%
+  \pgfkeys{/ZsetFile/.cd,#1}%
+  \begin{ZsetFileBox}{File: \texttt{\pgfkeysvalueof{/ZsetFile/title}}}
+    \lstinputlisting[breaklines, firstline=\pgfkeysvalueof{/ZsetFile/firstline}, lastline=\pgfkeysvalueof{/ZsetFile/lastline}, aboveskip=0pt, belowskip=0pt]{\pgfkeysvalueof{/ZsetFile/filename}}
+  \end{ZsetFileBox}
+}
+
+
+%%% Assign colors
+\setbeamercolor{frametitle}{fg=MINESBlue}
+\setbeamercolor{title}{fg=MINESBlue}
+
+% In case you choose to display the Table of Contents, or the Outline slide.
+\setbeamercolor{section in toc}{fg=MINESBlue}
+\setbeamercolor{subsection in toc}{fg=DarkGray}
+\setbeamercolor{section in toc shaded}{fg=DarkGray}
+
+% The colour of all the items, subitems and and subsubitems are set to black.
+\setbeamercolor{item}{fg=black}
+\setbeamercolor{subitem}{fg=black}
+\setbeamercolor{subsubitem}{fg=black}
+
+\setbeamercolor{description item}{fg=black}
+\setbeamercolor{caption}{fg=DarkDarkGray}
+\setbeamercolor{caption name}{fg=DarkDarkGray}
+\setbeamerfont{caption}{size=\scriptsize}
+
+\setbeamercolor{normal text}{fg=black}
+
+\setbeamerfont{title}{size=\Huge, series=\bfseries}
+\setbeamercolor{title}{fg=MINESBlue }
+
+\setbeamerfont{subtitle}{size=\Large}
+\setbeamercolor{subtitle}{fg=MINESBlue}
+
+\setbeamerfont{author}{series=\bfseries}
+\setbeamercolor{author}{fg=MINESBlue}
+
+\newcounter{index}
+\newcommand{\bashcmd}[1]{
+  \begin{center}
+    \setcounter{index}{0}
+    \begin{tikzpicture}
+      \node (0) {};
+      \foreach \line/\type [remember=\theindex as \lastline (initially 0)] in {#1}{%
+          \stepcounter{index}
+          \ifthenelse{\equal{\type}{\line}}{\node (\theindex) at (\lastline.south) [draw=LightGray, very thick, fill=LightGray, minimum width= 0.9\linewidth, text width=0.85\linewidth, anchor=north, inner sep = 2pt, outer sep = 0pt] {\texttt{\$ \line}};}{\node (\theindex) at (\lastline.south) [draw=DarkGray, very thick, fill=DarkGray, minimum width= 0.9\linewidth, text width=0.85\linewidth, anchor=north, inner sep = 2pt, outer sep = 0pt] {\texttt{\line}};}
+
+        }%
+    \end{tikzpicture}
+  \end{center}
+}
+
+\newcommand{\pythoncmd}[1]{
+  \begin{center}
+    \setcounter{index}{0}
+    \begin{tikzpicture}
+      \node (0) {};
+      \foreach \line/\type [remember=\theindex as \lastline (initially 0)] in {#1}{%
+          \stepcounter{index}
+          \ifthenelse{\equal{\type}{\line}}{\node (\theindex) at (\lastline.south) [draw=LightGray, very thick, fill=LightGray, minimum width= 0.9\linewidth, text width=0.85\linewidth, anchor=north, inner sep = 2pt, outer sep = 0pt] {\texttt{\line}};}{\node (\theindex) at (\lastline.south) [draw=DarkGray, very thick, fill=DarkGray, minimum width= 0.9\linewidth, text width=0.85\linewidth, anchor=north, inner sep = 2pt, outer sep = 0pt] {\texttt{\line}};}
+
+        }%
+    \end{tikzpicture}
+  \end{center}
+}
+
+%%%%%%%%%%%%%%
+%%
+%% Inner theme
+%%
+%%%%%%%%%%%%%%
+
+\useinnertheme{rectangles}
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{itemize item}{fg=MINESBlue}
+\setbeamertemplate{itemize item}[triangle]
+\setbeamercolor{itemize subitem}{fg=DarkGray}
+\setbeamertemplate{itemize subitem}[triangle]
+
+
+%%%%%%%%%%%%%%
+%%
+%% Outer theme
+%%
+%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TRAIN MODE
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DEFINING THE BACKGROUNDS
+
+\setbeamertemplate{button}{
+  \begin{tikzpicture}
+    \node[inner sep=2pt,outer sep = 0pt, anchor=center, fill=MINESBlue, fg=white]at (0.,0.) {\textbf{\footnotesize\insertbuttontext}};
+  \end{tikzpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DEFINING THE FOOTLINES
+\setbeamercolor{forfootline1}{bg=LightGray}
+\setbeamercolor{forfootline2}{bg=MINESBlue, fg=white}
+\defbeamertemplate*{footline}{mydefault}{%
+  \leavevmode
+  \begin{beamercolorbox}[ht=0.2cm,dp=0.1cm,wd=0.4\paperwidth,leftskip=0.2cm]{forfootline2}
+    \color{white}\textbf{\insertsection}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[ht=0.2cm,dp=0.1cm,wd=0.5\paperwidth,leftskip=0.2cm]{forfootline1}
+    \color{black}{\insertshortauthor}
+    \hfill
+    % \color{DarkDarkGray}{\insertdate}\hspace{0.2cm}
+    \color{DarkDarkGray}{Thesis defense}
+    \color{DarkDarkGray}{}\hspace{0.2cm}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[ht=0.2cm,dp=0.1cm,wd=0.1\paperwidth,center]{forfootline2}
+    \color{white}\insertframenumber/{\bf\inserttotalframenumber}
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DEFINING THE FRAMETITLES
+
+\defbeamertemplate*{frametitle}{mydefault}{
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\paperwidth,leftskip=.3cm,ht=0.66cm,dp=0.34cm]{ignorebg}%
+    \textbf{\Large{\insertframetitle}}%
+    \hfill
+    \colorbox{white}{\raisebox{-.2 cm}{\includegraphics[height=0.7cm]{./TEMPLATE_IMAGES/MINES.png}}\hspace{.3cm}}%
+  \end{beamercolorbox}%
+  \nointerlineskip%
+  \begin{beamercolorbox}[colsep=0.5pt,wd=\paperwidth]{forfootline2}
+  \end{beamercolorbox}
+}
+
+\defbeamertemplate*{frametitle}{part}{%
+  \vspace{1.cm}
+  \hfill
+  \begin{beamercolorbox}[wd=0.8\paperwidth,center,ht=0.66cm,dp=0.33cm]{forfootline2}%
+    \textbf{\huge\MakeUppercase{\insertframetitle}}%
+  \end{beamercolorbox}%
+  \hfill \hfill
+
+}
+
+\setbeamertemplate{title page}
+{
+  \vspace{0.2cm}
+  \includegraphics[width=\textwidth]{./TEMPLATE_IMAGES/logos_cover.pdf}
+  \begin{centering}
+    \begin{beamercolorbox}[colsep=0.25pt,wd=0.95\paperwidth]{forfootline2}
+    \end{beamercolorbox}
+
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+      \usebeamerfont{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+        \else%
+        %\vskip0.25em%
+        {\usebeamerfont{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    %\vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+      \usebeamerfont{date}%\insertdate
+    \end{beamercolorbox}%
+    %\vskip1.5em
+    \begin{beamercolorbox}[sep=8pt]{author}
+      {\usebeamerfont{author}\insertauthor} \\
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt]{data}
+      {\usebeamerfont{date}\insertinstitute} \\
+    \end{beamercolorbox}
+  \end{centering}
+  \vfill
+}
+
+
+\BeforeBeginEnvironment{frame}{%
+  \setbeamertemplate{footline}[mydefault]
+  \setbeamertemplate{frametitle}[mydefault]
+}
+
+\makeatletter
+\define@key{beamerframe}{part}[true]{%
+  \setbeamertemplate{frametitle}[part]%
+  \setbeamertemplate{footline}{}
+}
+
+\makeatother
+
+\defbeamertemplate*{section in toc}{ARMINES}
+{\hspace{0.2cm}\bf\large\inserttocsection\par}
+
+\defbeamertemplate*{subsection in toc}{ARMINES}
+{\leavevmode\leftskip=1.5em\hspace{0.2cm}\bf\large\inserttocsubsection\par}
+
+\defbeamertemplate*{subsubsection in toc}{ARMINES}
+{\leavevmode\normalsize\usebeamerfont{subsection in toc}\leftskip=3em%
+  \usebeamerfont{subsubsection in toc}\inserttocsubsubsection\par}
+
+\mode
+<all>
