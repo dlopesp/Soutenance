@@ -185,7 +185,7 @@
 
         \begin{figure}
             \centering
-            \includegraphics[width=0.98\textwidth]{Images/GTN_sim_exp.pdf}
+            \includegraphics[width=0.9\textwidth]{Images/damage_evolution.pdf}
         \end{figure}
         
 \end{frame}
@@ -254,9 +254,9 @@
     \end{itemize}
 
     \begin{block}{\textbf{Advantage}}
-        $\textcolor{NewRed}{\nabla P}$ can be directly computed from nodal values
+        $\textcolor{NewRed}{\nabla p}$ can be directly computed from nodal values
         \begin{equation*}
-            J = {-D_L \nabla C_L} + {{\frac{D_L C_L V_H}{RT} \textcolor{NewRed}{\nabla P}}}
+            J = {-D_L \nabla C_L} + {{\frac{D_L C_L V_H}{RT} \textcolor{NewRed}{\nabla p}}}
         \end{equation*} 
     \end{block}
     
@@ -264,7 +264,7 @@
     
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{Images/vol_locking.pdf}
+        \includegraphics[width=1.\textwidth]{Images/volumetric_locking.pdf}
     \end{figure}
 
     \begin{tikzpicture}[remember picture, overlay]
@@ -275,14 +275,126 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{$B$-bar formulation}
+\begin{frame}{$\boldsymbol{B}$-bar formulation}
     
 	\begin{itemize}
-		\item The use of quadratic element lead to high simulation times
-		\item $B$-bar formulation: 
-	\end{itemize}	    
+		\item The use of quadratic elements with additional dofs lead to high simulation times
+		\vspace{0.25cm}
+		\item $\boldsymbol{B}$-bar formulation (\textcolor{darkgray}{Hughes, 1980}): 
+		\vspace{0.25cm}
+		\begin{itemize}
+			\item Linear elements with full integration
+			\vspace{0.25cm}
+			\item Solves volumetric locking by modifying the strain-displacement matrix $\boldsymbol{B}$
+			\vspace{0.25cm}
+			\item To avoid extrapolating $p$ to the nodes for $\nabla p$ computation, it is considered as a dof
+		\end{itemize}
+	\end{itemize}	
+	
+	\vspace{0.25cm}	
+	
+	\begin{figure}
+        \centering
+        \includegraphics[width=1.\textwidth]{Images/comp_nlgeom-3f_B-bar.pdf}
+    \end{figure}    
     
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Nonlocal damage model}
+
+\begin{itemize}
+	\item Damage models such as the GTN model are known to induce \textbf{spurious mesh dependency} (element size, type and orientation)
+	\vspace{0.25cm}
+	\item To solve this problem, it is proposed to use a \textbf{nonlocal damage model} based on the \textbf{implicit gradient} by \textcolor{darkgray}{Peerlings \textit{et al.}, 1996}
+\end{itemize}
+
+	\vspace{0.25cm}
+
+	\begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/mesh_dependency.pdf}
+    \end{figure} 
+    
+    \begin{textblock}{5}(7.2,14.25)
+        \textcolor{darkgray}{\footnotesize (Besson, 2021)}
+    \end{textblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Nonlocal damage model}
+
+	\begin{itemize}
+		\item Two variables are used (two associated internal lengths: $\bar{\omega}$ and $\bar{\kappa}$):
+		
+		\vspace{0.15cm}
+		
+        \begin{itemize}
+
+            \item $ \displaystyle \textbf{Plastic volume variation:} \hspace{0.7cm} \textcolor{blue}{\bar{\omega}} - \ell_{\omega}^2 \Delta \textcolor{blue}{\bar{\omega}} = \omega \hspace{0.3cm} \textrm{where} \hspace{0.3cm} \omega = \textrm{trace}(\dot{\underline{\varepsilon}_p})$
+            
+            \vspace{0.3cm}
+            
+            \item $ \displaystyle \textbf{Accumulated plastic strain:} \hspace{0.3cm} \textcolor{red}{\bar{\kappa}} - \ell_{\kappa}^2 \Delta \textcolor{red}{\bar{\kappa}} = \kappa \hspace{3.6cm}$
+
+        \end{itemize}
+        
+        \vspace{0.3cm}
+        
+		\item The modified evolution laws for the damage variables are now:
+		
+        \vspace{0.3cm}
+        
+        \begin{itemize}
+        
+            \item \textbf{Void growth:} \hspace{0.7cm} $ \displaystyle \dot{f_g} = (1-f_g) \textcolor{blue}{\dot{\bar{\omega}}} $
+            
+            \vspace{0.3cm}
+            
+            \item \textbf{Void nucleation:} \hspace{0.2cm} $ \displaystyle \dot{f_n} = A_n \textcolor{red}{\dot{\bar{\kappa}}} + B_n(C) \textcolor{red}{\dot{\bar{\kappa}}}$
+            
+        \end{itemize}        
+               
+	\end{itemize}
+	
+	\vspace{2.65cm}
+	
+	\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=4.5cm, yshift=2cm] {\includegraphics[width=6cm]{Images/comp_kappa.pdf}}; 
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.5cm, yshift=3cm] {\includegraphics[width=4cm]{Images/elements.pdf}}; 
+    \end{tikzpicture}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pressurized disks tests}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hydrogen uptake during a tensile test}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hydrogen embrittlement modeling}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Simulation of fracture toughness tests}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Perspectives}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

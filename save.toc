@@ -1,3 +1,9 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Hydrogen inside metals}{2}{0}{1}
 \beamer@sectionintoc {2}{Finite element formulation}{7}{0}{2}
+\beamer@sectionintoc {3}{Pressurized disks tests}{12}{0}{3}
+\beamer@sectionintoc {4}{Hydrogen uptake during a tensile test}{12}{0}{4}
+\beamer@sectionintoc {5}{Hydrogen embrittlement modeling}{12}{0}{5}
+\beamer@sectionintoc {6}{Simulation of fracture toughness tests}{12}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{12}{0}{7}
+\beamer@sectionintoc {8}{Perspectives}{12}{0}{8}

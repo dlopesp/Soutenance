@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  22 JAN 2025 17:11
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  23 JAN 2025 17:16
  restricted system commands enabled.
 **save.tex
 (./save.tex
@@ -1542,7 +1542,7 @@ Package biblatex Info: Reference section=0 on input line 43.
 Package biblatex Info: Reference segment=0 on input line 43.
 \c@lstlisting=\count508
 (./save.nav)
-<./TEMPLATE_IMAGES/logos_cover.pdf, id=25, 320.88559pt x 22.7622pt>
+<./TEMPLATE_IMAGES/logos_cover.pdf, id=49, 320.88559pt x 22.7622pt>
 File: ./TEMPLATE_IMAGES/logos_cover.pdf Graphic file (type pdf)
 <use ./TEMPLATE_IMAGES/logos_cover.pdf>
 Package luatex.def Info: ./TEMPLATE_IMAGES/logos_cover.pdf  used on input line 
@@ -1575,7 +1575,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./TEMPLATE_IMAGES/logos_cove
 r.pdf>]
 (./save.toc)
-<./TEMPLATE_IMAGES/MINES.png, id=85, 1083.04625pt x 340.27126pt>
+<./TEMPLATE_IMAGES/MINES.png, id=115, 1083.04625pt x 340.27126pt>
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
 Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 80.
@@ -1583,12 +1583,12 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 80.
  [2
 
 <./TEMPLATE_IMAGES/MINES.png>]
-<Images/H2_uptake.pdf, id=96, 401.53828pt x 267.43575pt>
+<Images/H2_uptake.pdf, id=127, 401.53828pt x 267.43575pt>
 File: Images/H2_uptake.pdf Graphic file (type pdf)
 <use Images/H2_uptake.pdf>
 Package luatex.def Info: Images/H2_uptake.pdf  used on input line 102.
 (luatex.def)             Requested size: 184.65947pt x 122.98929pt.
-<Images/sieverts.pdf, id=97, 351.23944pt x 147.30647pt>
+<Images/sieverts.pdf, id=128, 351.23944pt x 147.30647pt>
 File: Images/sieverts.pdf Graphic file (type pdf)
 <use Images/sieverts.pdf>
 Package luatex.def Info: Images/sieverts.pdf  used on input line 102.
@@ -1602,12 +1602,12 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 102.
 <./Images/H2_uptake.pdf><./Images/sieverts.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 168.
-<Images/CL.pdf, id=127, 252.67964pt x 252.67963pt>
+<Images/CL.pdf, id=158, 252.67964pt x 252.67963pt>
 File: Images/CL.pdf Graphic file (type pdf)
 <use Images/CL.pdf>
 Package luatex.def Info: Images/CL.pdf  used on input line 168.
 (luatex.def)             Requested size: 71.13188pt x 71.1315pt.
-<Images/CT.pdf, id=128, 259.22633pt x 161.95859pt>
+<Images/CT.pdf, id=159, 259.22633pt x 161.95859pt>
 File: Images/CT.pdf Graphic file (type pdf)
 <use Images/CT.pdf>
 Package luatex.def Info: Images/CT.pdf  used on input line 168.
@@ -1619,19 +1619,19 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 168.
  [4
 
 <./Images/CL.pdf><./Images/CT.pdf>]
-<Images/GTN_sim_exp.pdf, id=169, 1192.62238pt x 347.4834pt>
-File: Images/GTN_sim_exp.pdf Graphic file (type pdf)
-<use Images/GTN_sim_exp.pdf>
-Package luatex.def Info: Images/GTN_sim_exp.pdf  used on input line 191.
-(luatex.def)             Requested size: 329.02634pt x 95.8631pt.
+<Images/damage_evolution.pdf, id=201, 740.87717pt x 305.05132pt>
+File: Images/damage_evolution.pdf Graphic file (type pdf)
+<use Images/damage_evolution.pdf>
+Package luatex.def Info: Images/damage_evolution.pdf  used on input line 191.
+(luatex.def)             Requested size: 302.1663pt x 124.41087pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
 Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 191.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [5
 
-<./Images/GTN_sim_exp.pdf>]
-<Images/HEDE3.pdf, id=605, 576.46544pt x 217.03824pt>
+<./Images/damage_evolution.pdf>]
+<Images/HEDE3.pdf, id=253, 576.46544pt x 217.03824pt>
 File: Images/HEDE3.pdf Graphic file (type pdf)
 <use Images/HEDE3.pdf>
 Package luatex.def Info: Images/HEDE3.pdf  used on input line 225.
@@ -1650,12 +1650,13 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 238.
  [7
 
 ]
-<Images/vol_locking.pdf, id=650, 3745.16205pt x 1118.99501pt>
-File: Images/vol_locking.pdf Graphic file (type pdf)
-<use Images/vol_locking.pdf>
-Package luatex.def Info: Images/vol_locking.pdf  used on input line 274.
-(luatex.def)             Requested size: 302.1663pt x 90.2727pt.
-<Images/Zset.jpg, id=651, 546.04pt x 205.76875pt>
+<Images/volumetric_locking.pdf, id=303, 2136.6218pt x 515.4657pt>
+File: Images/volumetric_locking.pdf Graphic file (type pdf)
+<use Images/volumetric_locking.pdf>
+Package luatex.def Info: Images/volumetric_locking.pdf  used on input line 274.
+
+(luatex.def)             Requested size: 335.74263pt x 80.9975pt.
+<Images/Zset.jpg, id=304, 546.04pt x 205.76875pt>
 File: Images/Zset.jpg Graphic file (type jpg)
 <use Images/Zset.jpg>
 Package luatex.def Info: Images/Zset.jpg  used on input line 274.
@@ -1664,42 +1665,73 @@ File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
 Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 274.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [8
 
-Overfull \vbox (4.37427pt too high) detected at line 274
- []
-
-[8
-
-<./Images/vol_locking.pdf><./Images/Zset.jpg>]
+<./Images/volumetric_locking.pdf><./Images/Zset.jpg>]
+<Images/comp_nlgeom-3f_B-bar.pdf, id=313, 2135.68593pt x 515.4657pt>
+File: Images/comp_nlgeom-3f_B-bar.pdf Graphic file (type pdf)
+<use Images/comp_nlgeom-3f_B-bar.pdf>
+Package luatex.def Info: Images/comp_nlgeom-3f_B-bar.pdf  used on input line 30
+1.
+(luatex.def)             Requested size: 335.74263pt x 81.02896pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 285.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 301.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [9
 
-]
-<TEMPLATE_IMAGES/MINES.png, id=720, 1083.04625pt x 340.27126pt>
+<./Images/comp_nlgeom-3f_B-bar.pdf>]
+<Images/mesh_dependency.pdf, id=324, 331.4129pt x 131.86212pt>
+File: Images/mesh_dependency.pdf Graphic file (type pdf)
+<use Images/mesh_dependency.pdf>
+Package luatex.def Info: Images/mesh_dependency.pdf  used on input line 324.
+(luatex.def)             Requested size: 302.1663pt x 120.22609pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 324.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [10
+
+<./Images/mesh_dependency.pdf>]
+<Images/comp_kappa.pdf, id=33043, 621.1853pt x 281.78186pt>
+File: Images/comp_kappa.pdf Graphic file (type pdf)
+<use Images/comp_kappa.pdf>
+Package luatex.def Info: Images/comp_kappa.pdf  used on input line 373.
+(luatex.def)             Requested size: 170.71652pt x 77.4408pt.
+<Images/elements.pdf, id=33044, 495.15663pt x 535.59087pt>
+File: Images/elements.pdf Graphic file (type pdf)
+<use Images/elements.pdf>
+Package luatex.def Info: Images/elements.pdf  used on input line 373.
+(luatex.def)             Requested size: 113.81102pt x 123.10158pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 373.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [11
+
+<./Images/comp_kappa.pdf><./Images/elements.pdf>]
+<TEMPLATE_IMAGES/MINES.png, id=33055, 1083.04625pt x 340.27126pt>
 File: TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 337.
+Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 449.
 (luatex.def)             Requested size: 120.8698pt x 37.96992pt.
-<TEMPLATE_IMAGES/MESSIAH.pdf, id=721, 116.33302pt x 74.58894pt>
+<TEMPLATE_IMAGES/MESSIAH.pdf, id=33056, 116.33302pt x 74.58894pt>
 File: TEMPLATE_IMAGES/MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/MESSIAH.pdf>
-Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 337.
+Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 449.
 (luatex.def)             Requested size: 67.14749pt x 43.05446pt.
-<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=722, 2799.98439pt x 218.4091pt>
+<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=33057, 2799.98439pt x 218.4091pt>
 File: TEMPLATE_IMAGES/logos_MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/logos_MESSIAH.pdf>
 Package luatex.def Info: TEMPLATE_IMAGES/logos_MESSIAH.pdf  used on input line 
-337.
+449.
 (luatex.def)             Requested size: 335.74263pt x 26.18796pt.
 
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 337--337
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 449--449
  [] 
  []
 
-[10
+[12
 
 <./TEMPLATE_IMAGES/MINES.png><./TEMPLATE_IMAGES/MESSIAH.pdf><./TEMPLATE_IMAGES/l
 ogos_MESSIAH.pdf>]
@@ -1714,42 +1746,45 @@ ogos_MESSIAH.pdf>]
 \openout9 = save.snm
  (./save.aux)
 Package rerunfilecheck Info: File `save.out' has not changed.
-(rerunfilecheck)             Checksum: 66C8C5A6C6753FCC724DFA5BB868CB34;373.
+(rerunfilecheck)             Checksum: C704CD0CD908712280A4314C28C97AF0;1430.
 Package logreq Info: Writing requests to 'save.run.xml'.
 
 \openout1 = save.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 39559 strings out of 477805
+ 39709 strings out of 477805
  125176,1648299 words of node,token memory allocated
- 4387 words of node memory still in use:
-   68 hlist, 11 vlist, 10 rule, 2 disc, 10 local_par, 10 math, 139 glue, 19 kern
-, 41 penalty, 83 glyph, 351 attribute, 73 glue_spec, 177 attribute_list, 4 write
+ 4475 words of node memory still in use:
+   68 hlist, 11 vlist, 10 rule, 2 disc, 10 local_par, 10 math, 139 glue, 27 kern
+, 41 penalty, 83 glyph, 367 attribute, 73 glue_spec, 185 attribute_list, 4 write
 , 24 pdf_literal, 16 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore 
 nodes
-   avail lists: 1:3,2:835,3:313,4:344,5:196,6:49,7:1783,8:36,9:606,10:17,11:101
- 58377 multiletter control sequences out of 65536+600000
- 106 fonts using 7596631 bytes
+   avail lists: 1:4,2:958,3:313,4:344,5:266,6:49,7:1783,8:38,9:627,10:17,11:137
+ 58459 multiletter control sequences out of 65536+600000
+ 143 fonts using 10298471 bytes
  128i,14n,115p,736b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
-vetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on save.pdf (10 pages, 1454210 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
+ic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on save.pdf (12 pages, 5721923 bytes).
 
-PDF statistics: 855 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 24 named destinations out of 1000 (max. 131072)
- 110 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 33202 PDF objects out of 38293 (max. 8388607)
+ 22005 compressed objects within 221 object streams
+ 34 named destinations out of 1000 (max. 131072)
+ 158 words of extra memory for PDF output out of 10000 (max. 100000000)
 

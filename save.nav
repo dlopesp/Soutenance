@@ -22,12 +22,34 @@
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@sectionpages {10}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\slideentry {2}{0}{5}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@sectionpages {7}{11}}
+\headcommand {\beamer@subsectionpages {7}{11}}
+\headcommand {\sectionentry {3}{Pressurized disks tests}{12}{Pressurized disks tests}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {4}{Hydrogen uptake during a tensile test}{12}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {5}{Hydrogen embrittlement modeling}{12}{Hydrogen embrittlement modeling}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {6}{Simulation of fracture toughness tests}{12}{Simulation of fracture toughness tests}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {7}{Conclusions}{12}{Conclusions}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {8}{Perspectives}{12}{Perspectives}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {9}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\gdef \inserttotalframenumber {12}}
