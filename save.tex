@@ -122,7 +122,7 @@
                     
                     \vspace{0.35cm}
         
-                    \item Trapped concentration: \hspace{0.8cm} $\displaystyle \textcolor{blue}{C_T} = \textcolor{NewRed}{N_T(\kappa)} \theta_T$
+                    \item Trapped concentration: \hspace{0.1cm} $\displaystyle \textcolor{blue}{C_T} = \sum_i^N C_T^i = \textcolor{NewRed}{N_T^i(\kappa)} \theta_T^i$
     
                 \end{itemize}
     
@@ -131,7 +131,7 @@
                 \item \textbf{Hydrogen flux:}
     
                 \begin{equation*}
-                    J = -D_L \nabla \textcolor{DarkGreen}{C_L} + \frac{D_L \textcolor{DarkGreen}{C_L} V_H}{RT} \textcolor{NewRed}{\nabla P}
+                    J = -D_L \nabla \textcolor{DarkGreen}{C_L} + \frac{D_L \textcolor{DarkGreen}{C_L} V_H}{RT} \textcolor{NewRed}{\nabla p}
                 \end{equation*}
             
                 \vspace{0.1cm}
@@ -139,7 +139,7 @@
                 \item \textbf{Oriani's equilibrium:}
                 
                 \begin{equation*}
-                    \frac{1- \theta_L}{\theta_L} \frac{\theta_T}{1- \theta_T} = K
+                    \frac{1- \theta_L}{\theta_L} \frac{\theta_T^i}{1- \theta_T^i} = K
                 \end{equation*}
                   
             \end{itemize}
@@ -169,7 +169,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Damage}
+\begin{frame}{Material damage}
 
     \begin{itemize}
         \item The \textbf{ductile behavior} of the metal is described by the \textbf{GTN model} (\textcolor{darkgray}{Tvergaard \textit{et al.} 1984}):
@@ -239,8 +239,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 \begin{frame}{Mixed formulation}
 
     \begin{itemize}
@@ -278,15 +276,16 @@
 \begin{frame}{$\boldsymbol{B}$-bar formulation}
     
 	\begin{itemize}
-		\item The use of quadratic elements with additional dofs lead to high simulation times
+		\item The use of \textbf{quadratic elements} with additional dofs lead to \\ \textbf{high simulation times}
 		\vspace{0.25cm}
-		\item $\boldsymbol{B}$-bar formulation (\textcolor{darkgray}{Hughes, 1980}): 
+		\item $\boldsymbol{B}$-bar (or $\boldsymbol{\bar{B}}$) formulation (\textcolor{darkgray}{Hughes, 1980}): 
 		\vspace{0.25cm}
 		\begin{itemize}
 			\item Linear elements with full integration
 			\vspace{0.25cm}
-			\item Solves volumetric locking by modifying the strain-displacement matrix $\boldsymbol{B}$
-			\vspace{0.25cm}
+			\item Solves volumetric locking by modifying the strain-displacement matrix: \\
+			$$\boldsymbol{\bar{B}} = \boldsymbol{B}_d + \boldsymbol{\bar{B}}_h$$
+			\vspace{0.05cm}
 			\item To avoid extrapolating $p$ to the nodes for $\nabla p$ computation, it is considered as a dof
 		\end{itemize}
 	\end{itemize}	
@@ -296,8 +295,47 @@
 	\begin{figure}
         \centering
         \includegraphics[width=1.\textwidth]{Images/comp_nlgeom-3f_B-bar.pdf}
-    \end{figure}    
+    \end{figure}  
     
+    \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.south west) [xshift=11.5cm, yshift=7.5cm] {\includegraphics[width=2cm]{Images/Zset.jpg}}; 
+    \end{tikzpicture}  
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{$\boldsymbol{B}$-bar formulation}
+
+	\begin{itemize}
+		\item Test on a Disk Compact Tension (DCT) specimen with 5200 elements:
+		\vspace{0.25cm}
+		
+		\begin{itemize}
+			\item \textbf{Mixed formulation}: 103,762 dofs, 1h 40 minutes to complete
+			\vspace{0.25cm}
+			\item $\boldsymbol{B}$\textbf{-bar formulation}: 33,974 dofs, 18 minutes to complete
+		\end{itemize}
+		\vspace{0.25cm}
+		\item Slightly higher force for the $\boldsymbol{B}$-bar formulation $\rightarrow$ Linear elements are inherently stiffer since they have less nodes  
+	\end{itemize}
+	
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{Images/Load_LLOD_Bbar.pdf}
+    \end{figure} 
+	\end{column}
+	
+	\begin{column}{0.5\textwidth}
+		\begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{Images/pressure_Bbar.pdf}
+    \end{figure} 
+	\end{column}
+\end{columns}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -375,6 +413,199 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Pressurized disks tests}
+
+\begin{frame}{Outline}
+    \tableofcontents[
+        currentsubsection,
+        hideothersubsections,
+        sectionstyle=show/shaded,
+        subsectionstyle=show/shaded,
+    ]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Context}
+
+	\begin{itemize}
+		\item \textbf{ISO 11114-4 standard:} uses pressurized disk tests for selecting metallic materials resistant to hydrogen embrittlement
+		\vspace{0.15cm}
+		\item Disk often fails in the clamping zone $\rightarrow$ \textbf{Hard analysis}
+		\vspace{0.15cm}
+		\item \textbf{\textcolor{MINESBlue}{First step:}} redesigning the disk geometry to control failure location
+	\end{itemize}
+	
+	\vspace{5cm}
+	
+	\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=3cm, yshift=3.5cm] {\includegraphics[width=4cm]{Images/machine_DPT.pdf}}; 
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=6.75cm, yshift=5.5cm] {\includegraphics[width=2.cm]{Images/HEI.png}}; 
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=6.35cm, yshift=3cm] {\includegraphics[width=2.75cm]{Images/machine_DPT_2.jpg}}; 
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.5cm, yshift=5cm] {\includegraphics[width=2.cm]{Images/std_disk.pdf}}; 
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.5cm, yshift=2.5cm] {\includegraphics[width=4cm]{Images/rupture_disk.pdf}}; 
+    \end{tikzpicture}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Redesign of the disk geometry}
+
+\begin{itemize}
+	\item New proposed geometries:
+	\vspace{0.15cm}
+	\begin{itemize}
+		\item No need to modify the test setup
+		\vspace{0.15cm}
+		\item Keep the same minimum thickness of the standard (0.75 mm)
+		\vspace{0.15cm}
+	\end{itemize}
+	\item Optimization with respect to $\ell$, $R$ and $R^\prime$ with FE simulations considering an elasto-plastic behavior
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/disks.pdf}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Redesign of the disk geometry}
+
+\begin{itemize}
+	\item The location of the maximum accumulated plastic strain ($\kappa$) corresponds to the failure location
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{Images/disks_rupture.pdf}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Materials}
+
+\begin{columns}
+\begin{column}{0.65\textwidth}
+
+\begin{itemize}
+	\item \textbf{X52 vintage steel:}
+	\vspace{0.3cm}
+	\begin{itemize}
+		\item Yield strength: 400 MPa
+		\vspace{0.3cm}
+		\item Different elongation at rupture in T and L directions
+	\end{itemize}
+	
+	\vspace{0.35cm}
+	
+	\item \textbf{E355 mod. steel:}
+	
+	\vspace{0.3cm}
+	
+	\begin{itemize}
+		\item Yield strength: 330 MPa
+		\vspace{0.3cm}
+		\item Higher elongation at rupture and lower Ultimate Tensile Strength in relation with the vintage material
+		\vspace{0.cm}
+		\item Similar elongation at rupture in both directions
+	\end{itemize}
+	
+	\vspace{0.35cm}	
+	
+	\item Elasto(visco)-plastic model coefficients' identified through optimization: \\
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.98\textwidth]{Images/voce_law.png} \\
+\end{figure}
+
+\end{itemize}
+
+\end{column}
+
+\begin{column}{0.35\textwidth}
+	
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{Images/plot_X52_radial.pdf} \\
+	\includegraphics[width=0.95\textwidth]{Images/plot_E355_radial.pdf}
+\end{figure}
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Simulation of pressurized disks}
+
+\begin{itemize}
+	\item Axisymmetric model, quadratic elements with reduced integration (mixed formulation)
+	\vspace{0.15cm}
+	\item Hydrogen diffusion parameters taken from the literature
+	\vspace{0.15cm}
+	\item Since damage is not considered into the numerical model, the simulations were stopped once they reached experimentally observed rupture pressure $(P_r)$
+	\vspace{0.15cm} 
+	\item Model's boundary conditions:
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/all_BC_std.pdf} \\
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Geometry effect (under helium)}
+
+\begin{itemize}
+	\item Good agreement between experimental and numerical results
+	\vspace{0.15cm}
+	\item Successfully modification of fracture location
+	\vspace{0.15cm}
+	\item Failure is primarily driven by plasticity and occurs under a limit load scenario
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/disks_helium.pdf} \\
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Hydrogen trapping model}
+
+
+\begin{itemize}
+	\item Considers only dislocations as traps 
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
