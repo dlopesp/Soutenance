@@ -1,9 +1,11 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Hydrogen inside metals}{2}{0}{1}
-\beamer@sectionintoc {2}{Finite element formulation}{7}{0}{2}
-\beamer@sectionintoc {3}{Pressurized disks tests}{13}{0}{3}
-\beamer@sectionintoc {4}{Hydrogen uptake during a tensile test}{21}{0}{4}
-\beamer@sectionintoc {5}{Hydrogen embrittlement modeling}{21}{0}{5}
-\beamer@sectionintoc {6}{Simulation of fracture toughness tests}{21}{0}{6}
-\beamer@sectionintoc {7}{Conclusions}{21}{0}{7}
-\beamer@sectionintoc {8}{Perspectives}{21}{0}{8}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Hydrogen inside metals}{5}{0}{2}
+\beamer@sectionintoc {3}{Finite element formulation}{10}{0}{3}
+\beamer@sectionintoc {4}{Numerical simulations}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Pressurized disks tests}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Hydrogen uptake during a tensile test}{28}{0}{4}
+\beamer@subsectionintoc {4}{3}{Hydrogen embrittlement modeling}{29}{0}{4}
+\beamer@subsectionintoc {4}{4}{Simulation of fracture toughness tests}{29}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{29}{0}{5}
+\beamer@sectionintoc {6}{Perspectives}{29}{0}{6}

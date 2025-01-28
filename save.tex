@@ -46,37 +46,71 @@
     \maketitle
 \end{frame}
 
-%\section{Introduction}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}{Introduction}
-%
-%    \begin{itemize}
-%        \item Item 1
-%        \item Item 2
-%        \item Item 3
-%    \end{itemize}
-%
-%\end{frame}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\begin{frame}{Outline}
-%    \tableofcontents
-%\end{frame}
-%
+\section{Introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Background and challenges}
+
+    \begin{itemize}
+		\item In the context of \textbf{energy transition}, \textbf{hydrogen} plays an important role as an \textbf{energy vector}
+		\vspace{0.15cm}
+		\item Hydrogen can be produced from other \textbf{renewable sources}, such as wind and solar
+		\vspace{0.15cm}
+		\item Hydrogen transport using \textbf{existing natural gas pipelines} (40,000 km in France, €50 billion in assets, up to 80 years old) is a proposal for hydrogen transport
+    \end{itemize}
+    
+    \vspace{0.2cm}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.92\textwidth]{Images/Context.pdf}
+\end{figure}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Background and challenges}
+
+\begin{itemize}
+	\item \textbf{Hydrogen embrittlement:} ductility and toughness reduction, premature failure
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{Images/MESSIAH.pdf}
+\end{figure}
+
+\textbf{\textcolor{MINESBlue}{Objectives:}}
+\vspace{0.15cm}
+\begin{itemize}
+	\item Develop a model coupling plasticity, damage and hydrogen diffusion
+	\vspace{0.15cm}
+	\item Validate this model on experimental results
+	\vspace{0.15cm}
+	\item Simulate size and thickness effect on toughness with sub-size specimens
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Hydrogen inside metals}
 
 \begin{frame}{Outline}
-    \tableofcontents[
-        currentsubsection,
-        hideothersubsections,
-        sectionstyle=show/shaded,
-        subsectionstyle=show/shaded,
-    ]
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,12 +263,12 @@
 \section{Finite element formulation}
 
 \begin{frame}{Outline}
-    \tableofcontents[
-        currentsubsection,
-        hideothersubsections,
-        sectionstyle=show/shaded,
-        subsectionstyle=show/shaded,
-    ]
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -372,7 +406,7 @@
 		
         \begin{itemize}
 
-            \item $ \displaystyle \textbf{Plastic volume variation:} \hspace{0.7cm} \textcolor{blue}{\bar{\omega}} - \ell_{\omega}^2 \Delta \textcolor{blue}{\bar{\omega}} = \omega \hspace{0.3cm} \textrm{where} \hspace{0.3cm} \omega = \textrm{trace}(\dot{\underline{\varepsilon}_p})$
+            \item $ \displaystyle \textbf{Plastic volume variation:} \hspace{0.7cm} \textcolor{blue}{\bar{\omega}} - \ell_{\omega}^2 \Delta \textcolor{blue}{\bar{\omega}} = \omega \hspace{0.3cm} \textrm{where} \hspace{0.3cm} \omega = \textrm{trace}(\dot{\underline{\varepsilon}}_p)$
             
             \vspace{0.3cm}
             
@@ -412,15 +446,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Pressurized disks tests}
+\section{Numerical simulations}
+
+\subsection{Pressurized disks tests}
 
 \begin{frame}{Outline}
-    \tableofcontents[
-        currentsubsection,
-        hideothersubsections,
-        sectionstyle=show/shaded,
-        subsectionstyle=show/shaded,
-    ]
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -430,7 +466,7 @@
 	\begin{itemize}
 		\item \textbf{ISO 11114-4 standard:} uses pressurized disk tests for selecting metallic materials resistant to hydrogen embrittlement
 		\vspace{0.15cm}
-		\item Disk often fails in the clamping zone $\rightarrow$ \textbf{Hard analysis}
+		\item Disk often fails in the clamping zone
 		\vspace{0.15cm}
 		\item \textbf{\textcolor{MINESBlue}{First step:}} redesigning the disk geometry to control failure location
 	\end{itemize}
@@ -454,7 +490,7 @@
     \end{tikzpicture}
     
     \begin{tikzpicture}[remember picture, overlay]
-    	\node at (current page.south west) [xshift=10.5cm, yshift=2.5cm] {\includegraphics[width=4cm]{Images/rupture_disk.pdf}}; 
+    	\node at (current page.south west) [xshift=10.5cm, yshift=2.5cm] {\includegraphics[width=4cm]{Images/rupture_disk.png}}; 
     \end{tikzpicture}
 	
 \end{frame}
@@ -579,19 +615,47 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Geometry effect (under helium)}
+\begin{frame}{Results under helium}
 
 \begin{itemize}
-	\item Good agreement between experimental and numerical results
+	\item Experiments carried out by Luciano Santana
 	\vspace{0.15cm}
 	\item Successfully modification of fracture location
 	\vspace{0.15cm}
-	\item Failure is primarily driven by plasticity and occurs under a limit load scenario
+	\item Failure is primarily driven by plasticity and occurs \\ under a limit load scenario
 \end{itemize}
+
+\vspace{0.15cm}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{Images/disks_helium.pdf} \\
+	\includegraphics[width=0.85\textwidth]{Images/disks_helium.pdf} \\
+\end{figure}
+
+\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.2cm, yshift=7.5cm] {\includegraphics[width=3.75cm]{Images/fracto+simulation.png}}; 
+    \end{tikzpicture}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results under hydrogen (E355 mod. steel)}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Images/H2_results_E355.pdf} \\
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Hydrogen embrittled depth}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/embrittled_depth.pdf} \\
 \end{figure}
 
 \end{frame}
@@ -600,24 +664,93 @@
 
 \begin{frame}{Hydrogen trapping model}
 
-
 \begin{itemize}
-	\item Considers only dislocations as traps 
+	\item Considers only one kind of trap: dislocations
+	\vspace{0.1cm}
+	\item Trap binding energies ($W_B$) and trap densities ($N_T$) were taken from the literature and analyzed based on the experimental observations
+	\vspace{0.1cm}
+	\item Based on the models proposed by \textcolor{darkgray}{Moro \textit{et al.} (2010)} and \textcolor{darkgray}{Kumnick \textit{et al.} (1980)}, four cases emerge
 \end{itemize}
+
+\begin{columns}
+	\begin{column}{0.55\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.95\textwidth]{Images/cases.pdf} \\
+	\end{figure}
+	\end{column}
+	
+	\begin{column}{0.45\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.0\textwidth]{Images/plot_NT_epcum.pdf} \\
+	\end{figure}
+	\end{column}
+\end{columns}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Hydrogen uptake during a tensile test}
+\begin{frame}{Hydrogen embrittled depth}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/table_zoom.pdf} \\
+\end{figure}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Hydrogen embrittlement modeling}
+\begin{frame}{Principal stress evolution}
+
+\begin{itemize}
+	\item Specimens that develop higher principal stress ($\sigma_I$) in the fracture zone fail at a lower hydrogen pressure ($P_a(H_2)$)
+	\vspace{0.25cm}
+	\item The total hydrogen concentration reduces the maximum principal stress that that triggers fracture
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{0.49\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{Images/sigp1_pressure.pdf} \\
+	\end{figure}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{Images/plot_sigp1_C_edit.pdf} \\
+	\end{figure}
+\end{column}
+
+\end{columns}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Simulation of fracture toughness tests}
+\subsection{Hydrogen uptake during a tensile test}
+
+\begin{frame}{Outline}
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Hydrogen embrittlement modeling}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Simulation of fracture toughness tests}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
