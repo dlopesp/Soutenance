@@ -5,7 +5,6 @@
 \beamer@sectionintoc {4}{Numerical simulations}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Pressurized disks tests}{16}{0}{4}
 \beamer@subsectionintoc {4}{2}{Hydrogen uptake during a tensile test}{28}{0}{4}
-\beamer@subsectionintoc {4}{3}{Hydrogen embrittlement modeling}{29}{0}{4}
-\beamer@subsectionintoc {4}{4}{Simulation of fracture toughness tests}{29}{0}{4}
-\beamer@sectionintoc {5}{Conclusions}{29}{0}{5}
-\beamer@sectionintoc {6}{Perspectives}{29}{0}{6}
+\beamer@subsectionintoc {4}{3}{Hydrogen embrittlement modeling}{36}{0}{4}
+\beamer@subsectionintoc {4}{4}{Simulation of fracture toughness tests}{37}{0}{4}
+\beamer@sectionintoc {5}{Conclusions and perspectives}{38}{0}{5}

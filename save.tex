@@ -8,6 +8,7 @@
 \usefonttheme[onlymath]{serif} 
 \usepackage{etoolbox}
 \usepackage{xcolor}
+\usepackage{gensymb}
 \usepackage{amsmath}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{animate}
@@ -746,19 +747,249 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}{Experimental procedure}
+
+\textbf{\textcolor{MINESBlue}{\large Tensile test:}}
+\vspace{0.1cm}
+\begin{itemize}
+	\item Material: X52 vintage steel
+	\vspace{0.1cm}
+	\item Gaseous atmosphere under different conditions:
+\vspace{0.1cm}
+\begin{table}[ht!]
+	\small
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{ll}
+    \textbf{Environment}                 & Air, 85 bar H$_\text{2}$                               \\ \hline
+    \textbf{Strain}                 & 0\%, 30\%Rp02, 90\%Rp02, 3\%, 6\%, 12\%             \\ \hline
+    \textbf{Strain Rate (s$^{-1}$)} & $1\times10^{-5}$, $1\times10^{-4}$, $1\times10^{-3}$ \\ \hline
+    \textbf{Dwell}                       & No dwell, Dwell                                     
+    \end{tabular}
+\end{table}
+	
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{0.49\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Images/machine_fenhyx.pdf} \\
+	\end{figure}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Images/TDS_specimen.pdf} \\
+	\end{figure}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Experimental procedure}
+
+\textbf{\textcolor{MINESBlue}{\large Thermal Desorption Spectroscopy (TDS) test:}}
+\vspace{0.15cm}
+\begin{itemize}
+	\item High precision (10$^{-3}$ wppm), calibration with a Certified Reference Material (CRM) with a known hydrogen mass
+	\vspace{0.15cm}
+	\item Temperature ramp of 10$^{\circ}$C/min up to 600$^{\circ}$C 
+	\vspace{0.15cm}
+	\item The hydrogen content is determined by integrating the first peak in the TDS spectra
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{Images/TDS_spectra.pdf} \\
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Simulation model}
+
+\begin{columns}
+
+\begin{column}{0.65\textwidth}
+
+\begin{itemize}
+	\item 3D mesh of 1/8 of the specimen (plane strain)
+	\vspace{0.15cm}
+	\item Elasto(visco)-plastic behavior
+	\vspace{0.15cm}
+	\item Hydrogen applied to the exposed surfaces
+	\vspace{0.15cm}
+	\item $N_T(\kappa)$ adjusted based on experimental results at different strain levels
+\end{itemize}
+
+	\vspace{0.25cm}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Images/TDS_BC.pdf} \\
+	\end{figure}
+	
+	\vspace{0.15cm}
+
+\end{column}
+
+\begin{column}{0.35\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.99\textwidth]{Images/plot_time_stress.pdf} \\
+		\includegraphics[width=0.95\textwidth]{Images/NT_TDS.pdf}
+	\end{figure}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Strain effect}
+
+\begin{itemize}
+	\item Specimens deformed up to 90\%Rp02, 3\%, 6\% and 12\% at 
+	$\dot{\varepsilon} = 1\times10^{-4}$ s$^{-1}$
+	\vspace{0.15cm}
+	\item Higher strain levels lead to higher hydrogen concentrations
+	\vspace{0.15cm}
+	\item Most of hydrogen is located at the gauge length
+	\vspace{0.15cm}
+	\item For all cases, hydrogen is mostly located near the surface
+\end{itemize}
+
+\vspace{0.15cm}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{Images/strain_effect.pdf} \\
+	\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Strain effect}
+
+	\begin{itemize}
+		\item The preparations required before the TDS test takes approximately \textbf{one hour}, at which hydrogen can freely desorb the specimen
+		\vspace{0.15cm}
+		\item The amount of hydrogen that leaves the specimen during resting is lower at higher strains
+		\vspace{0.15cm}
+		\item With the actual model, at least 80\% of the hydrogen content leaves the specimen during resting
+	\end{itemize}
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{Images/resting_time.pdf} \\
+	\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Strain rate effect}
+
+\begin{columns}
+
+\begin{column}{0.55\textwidth}
+\begin{itemize}
+	\item Tests conducted at three different strain rates: $1\times10^{-3}$, $1\times10^{-4}$ and $1\times10^{-5}$ s$^{-1}$
+	\vspace{0.25cm}
+	\item One-hour resting time allowing hydrogen desorption is considered
+	\vspace{0.25cm}
+	\item \textbf{Lower strain rates} lead to \textbf{higher hydrogen content}, as hydrogen has more time to diffuse throughout the material
+\end{itemize}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{Images/strain_rate_effect.pdf} \\
+	\vspace{0.25cm}
+%	\includegraphics[width=\textwidth]{Images/C_field_strain_rate_effect.pdf}
+\end{figure}
+
+\end{column}
+\end{columns}
+
+\begin{figure}
+		\centering
+		\includegraphics[width=0.65\textwidth]{Images/C_field_strain_rate_effect.pdf} \\
+	\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Dwell effect}
+
+\begin{itemize}
+	\item \textbf{Dwell time:} the time a specimen is exposed to hydrogen without further deformation until it reaches the same exposure time as the most deformed specimen (12\%)
+	\vspace{0.25cm}
+	\item Specimens deformed up to 3\% strain at $1\times10^{-4}$ $1\times10^{-5}$ s$^{-1}$
+	\vspace{0.25cm}
+	\item Longer exposure $\rightarrow$ Higher hydrogen content
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Images/Dwell_No_Dwell.pdf} 
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Hydrogen embrittlement modeling}
+
+\begin{frame}{Outline}
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Simulation of fracture toughness tests}
 
+\begin{frame}{Outline}
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Conclusions}
+\section{Conclusions and perspectives}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Outline}
+	\tableofcontents[ 
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/shaded, 
+    subsectionstyle=show/shaded, 
+    ] 
+\end{frame}
 
-\section{Perspectives}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -793,7 +1024,7 @@
     \vspace{0.3cm}
 
     \begin{center}
-        \Huge{\textcolor{MINESBlue}{\textbf{Thank you for your attention}}} \\
+        \Huge{\textcolor{MINESBlue}{\textbf{Thank you}}} \\
         \vspace{1.0cm}
         \normalsize Daniella LOPES PINTO \\
         \vspace{0.1cm}

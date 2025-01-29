@@ -70,22 +70,39 @@
 \headcommand {\beamer@subsectionentry {0}{4}{2}{28}{Hydrogen uptake during a tensile test}}
 \headcommand {\slideentry {4}{2}{1}{28/28}{Hydrogen uptake during a tensile test}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@subsectionpages {28}{28}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{29}{Hydrogen embrittlement modeling}}
-\headcommand {\beamer@subsectionpages {29}{28}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{29}{Simulation of fracture toughness tests}}
-\headcommand {\beamer@sectionpages {16}{28}}
-\headcommand {\beamer@subsectionpages {29}{28}}
-\headcommand {\sectionentry {5}{Conclusions}{29}{Conclusions}{0}}
-\headcommand {\beamer@sectionpages {29}{28}}
-\headcommand {\beamer@subsectionpages {29}{28}}
-\headcommand {\sectionentry {6}{Perspectives}{29}{Perspectives}{0}}
-\headcommand {\beamer@sectionpages {29}{28}}
-\headcommand {\beamer@subsectionpages {29}{28}}
-\headcommand {\slideentry {7}{0}{1}{29/29}{}{0}}
+\headcommand {\slideentry {4}{2}{2}{29/29}{Hydrogen uptake during a tensile test}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@partpages {1}{29}}
-\headcommand {\beamer@subsectionpages {29}{29}}
-\headcommand {\beamer@sectionpages {29}{29}}
-\headcommand {\beamer@documentpages {29}}
-\headcommand {\gdef \inserttotalframenumber {29}}
+\headcommand {\slideentry {4}{2}{3}{30/30}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {4}{2}{4}{31/31}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {4}{2}{5}{32/32}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {4}{2}{6}{33/33}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {4}{2}{7}{34/34}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {4}{2}{8}{35/35}{Hydrogen uptake during a tensile test}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\beamer@subsectionpages {28}{35}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{36}{Hydrogen embrittlement modeling}}
+\headcommand {\slideentry {4}{3}{1}{36/36}{Hydrogen embrittlement modeling}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@subsectionpages {36}{36}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{37}{Simulation of fracture toughness tests}}
+\headcommand {\slideentry {4}{4}{1}{37/37}{Simulation of fracture toughness tests}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@sectionpages {16}{37}}
+\headcommand {\beamer@subsectionpages {37}{37}}
+\headcommand {\sectionentry {5}{Conclusions and perspectives}{38}{Conclusions and perspectives}{0}}
+\headcommand {\slideentry {5}{0}{1}{38/38}{}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\beamer@sectionpages {38}{38}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\slideentry {6}{0}{1}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\beamer@partpages {1}{39}}
+\headcommand {\beamer@subsectionpages {39}{39}}
+\headcommand {\beamer@sectionpages {39}{39}}
+\headcommand {\beamer@documentpages {39}}
+\headcommand {\gdef \inserttotalframenumber {39}}
