@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  29 JAN 2025 14:53
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  11 FEB 2025 21:11
  restricted system commands enabled.
 **save.tex
 (./save.tex
@@ -1603,553 +1603,577 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 71.
 
 Missing character: There is no € (U+20AC) in font phvr8t!
 <./TEMPLATE_IMAGES/MINES.png><./Images/Context.pdf>]
-<Images/MESSIAH.pdf, id=173, 333.1894pt x 120.36766pt>
+<Images/MESSIAH.pdf, id=173, 332.13484pt x 137.81645pt>
 File: Images/MESSIAH.pdf Graphic file (type pdf)
 <use Images/MESSIAH.pdf>
-Package luatex.def Info: Images/MESSIAH.pdf  used on input line 96.
-(luatex.def)             Requested size: 318.95447pt x 115.22469pt.
+Package luatex.def Info: Images/MESSIAH.pdf  used on input line 92.
+(luatex.def)             Requested size: 318.95447pt x 132.35063pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 96.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 92.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [3
 
 <./Images/MESSIAH.pdf>]
-(./save.toc)
+<Images/plateau_plane_strain.pdf, id=306, 353.86765pt x 385.0221pt>
+File: Images/plateau_plane_strain.pdf Graphic file (type pdf)
+<use Images/plateau_plane_strain.pdf>
+Package luatex.def Info: Images/plateau_plane_strain.pdf  used on input line 11
+0.
+(luatex.def)             Requested size: 167.8713pt x 182.65239pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 102.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 110.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [4
+
+Overfull \vbox (9.91556pt too high) detected at line 110
+ []
+
+[4
+
+<./Images/plateau_plane_strain.pdf>]
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 124.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [5
 
 ] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 115.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [5
-
-]
-<Images/H2_uptake.pdf, id=349, 401.53828pt x 267.43575pt>
-File: Images/H2_uptake.pdf Graphic file (type pdf)
-<use Images/H2_uptake.pdf>
-Package luatex.def Info: Images/H2_uptake.pdf  used on input line 137.
-(luatex.def)             Requested size: 184.65947pt x 122.98929pt.
-<Images/sieverts.pdf, id=350, 351.21867pt x 147.30824pt>
-File: Images/sieverts.pdf Graphic file (type pdf)
-<use Images/sieverts.pdf>
-Package luatex.def Info: Images/sieverts.pdf  used on input line 137.
-(luatex.def)             Requested size: 141.01128pt x 59.14478pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 137.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 130.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [6
 
-<./Images/H2_uptake.pdf><./Images/sieverts.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 203.
-<Images/CL.pdf, id=382, 252.67964pt x 252.67963pt>
-File: Images/CL.pdf Graphic file (type pdf)
-<use Images/CL.pdf>
-Package luatex.def Info: Images/CL.pdf  used on input line 203.
-(luatex.def)             Requested size: 71.13188pt x 71.1315pt.
-<Images/CT.pdf, id=383, 259.22627pt x 149.9979pt>
-File: Images/CT.pdf Graphic file (type pdf)
-<use Images/CT.pdf>
-Package luatex.def Info: Images/CT.pdf  used on input line 203.
-(luatex.def)             Requested size: 128.0374pt x 74.08781pt.
+] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 203.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 143.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
-
-Overfull \vbox (10.16205pt too high) detected at line 203
- []
 
 [7
 
-<./Images/CL.pdf><./Images/CT.pdf>]
-<Images/damage_evolution.pdf, id=434, 740.87717pt x 305.05132pt>
-File: Images/damage_evolution.pdf Graphic file (type pdf)
-<use Images/damage_evolution.pdf>
-Package luatex.def Info: Images/damage_evolution.pdf  used on input line 226.
-(luatex.def)             Requested size: 302.1663pt x 124.41087pt.
+]
+<Images/H2_uptake.pdf, id=381, 401.53828pt x 267.43575pt>
+File: Images/H2_uptake.pdf Graphic file (type pdf)
+<use Images/H2_uptake.pdf>
+Package luatex.def Info: Images/H2_uptake.pdf  used on input line 165.
+(luatex.def)             Requested size: 184.65947pt x 122.98929pt.
+<Images/sieverts.pdf, id=382, 351.21867pt x 147.30824pt>
+File: Images/sieverts.pdf Graphic file (type pdf)
+<use Images/sieverts.pdf>
+Package luatex.def Info: Images/sieverts.pdf  used on input line 165.
+(luatex.def)             Requested size: 141.01128pt x 59.14478pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 226.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 165.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [8
 
+<./Images/H2_uptake.pdf><./Images/sieverts.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 231.
+<Images/CL.pdf, id=414, 252.67964pt x 252.67963pt>
+File: Images/CL.pdf Graphic file (type pdf)
+<use Images/CL.pdf>
+Package luatex.def Info: Images/CL.pdf  used on input line 231.
+(luatex.def)             Requested size: 71.13188pt x 71.1315pt.
+<Images/CT.pdf, id=415, 259.22627pt x 149.9979pt>
+File: Images/CT.pdf Graphic file (type pdf)
+<use Images/CT.pdf>
+Package luatex.def Info: Images/CT.pdf  used on input line 231.
+(luatex.def)             Requested size: 128.0374pt x 74.08781pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 231.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+Overfull \vbox (10.16205pt too high) detected at line 231
+ []
+
+[9
+
+<./Images/CL.pdf><./Images/CT.pdf>]
+<Images/damage_evolution.pdf, id=466, 740.87717pt x 305.05132pt>
+File: Images/damage_evolution.pdf Graphic file (type pdf)
+<use Images/damage_evolution.pdf>
+Package luatex.def Info: Images/damage_evolution.pdf  used on input line 254.
+(luatex.def)             Requested size: 302.1663pt x 124.41087pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 254.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [10
+
 <./Images/damage_evolution.pdf>]
-<Images/HEDE3.pdf, id=487, 576.46544pt x 217.03824pt>
+<Images/HEDE3.pdf, id=519, 576.46544pt x 217.03824pt>
 File: Images/HEDE3.pdf Graphic file (type pdf)
 <use Images/HEDE3.pdf>
-Package luatex.def Info: Images/HEDE3.pdf  used on input line 260.
+Package luatex.def Info: Images/HEDE3.pdf  used on input line 288.
 (luatex.def)             Requested size: 251.80696pt x 94.80495pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 260.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 288.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
 
-[9
+[11
 
 <./Images/HEDE3.pdf>] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 273.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [10
-
-]
-<Images/volumetric_locking.pdf, id=538, 2136.6218pt x 515.4657pt>
-File: Images/volumetric_locking.pdf Graphic file (type pdf)
-<use Images/volumetric_locking.pdf>
-Package luatex.def Info: Images/volumetric_locking.pdf  used on input line 307.
-
-(luatex.def)             Requested size: 335.74263pt x 80.9975pt.
-<Images/Zset.jpg, id=539, 546.04pt x 205.76875pt>
-File: Images/Zset.jpg Graphic file (type jpg)
-<use Images/Zset.jpg>
-Package luatex.def Info: Images/Zset.jpg  used on input line 307.
-(luatex.def)             Requested size: 56.9055pt x 21.44151pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 307.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [11
-
-<./Images/volumetric_locking.pdf><./Images/Zset.jpg>]
-<Images/comp_nlgeom-3f_B-bar.pdf, id=549, 2135.68593pt x 515.4657pt>
-File: Images/comp_nlgeom-3f_B-bar.pdf Graphic file (type pdf)
-<use Images/comp_nlgeom-3f_B-bar.pdf>
-Package luatex.def Info: Images/comp_nlgeom-3f_B-bar.pdf  used on input line 33
-9.
-(luatex.def)             Requested size: 335.74263pt x 81.02896pt.
-File: Images/Zset.jpg Graphic file (type jpg)
-<use Images/Zset.jpg>
-Package luatex.def Info: Images/Zset.jpg  used on input line 339.
-(luatex.def)             Requested size: 56.9055pt x 21.44151pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 339.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 301.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [12
 
-<./Images/comp_nlgeom-3f_B-bar.pdf>]
-<Images/Load_LLOD_Bbar.pdf, id=562, 331.40631pt x 330.75937pt>
-File: Images/Load_LLOD_Bbar.pdf Graphic file (type pdf)
-<use Images/Load_LLOD_Bbar.pdf>
-Package luatex.def Info: Images/Load_LLOD_Bbar.pdf  used on input line 374.
-(luatex.def)             Requested size: 117.5094pt x 117.2816pt.
-<Images/pressure_Bbar.pdf, id=563, 1501.74821pt x 1909.01819pt>
-File: Images/pressure_Bbar.pdf Graphic file (type pdf)
-<use Images/pressure_Bbar.pdf>
-Package luatex.def Info: Images/pressure_Bbar.pdf  used on input line 374.
-(luatex.def)             Requested size: 100.7238pt x 128.02298pt.
+]
+<Images/volumetric_locking.pdf, id=571, 2136.6218pt x 515.4657pt>
+File: Images/volumetric_locking.pdf Graphic file (type pdf)
+<use Images/volumetric_locking.pdf>
+Package luatex.def Info: Images/volumetric_locking.pdf  used on input line 335.
+
+(luatex.def)             Requested size: 335.74263pt x 80.9975pt.
+<Images/Zset.jpg, id=572, 546.04pt x 205.76875pt>
+File: Images/Zset.jpg Graphic file (type jpg)
+<use Images/Zset.jpg>
+Package luatex.def Info: Images/Zset.jpg  used on input line 335.
+(luatex.def)             Requested size: 56.9055pt x 21.44151pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 374.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 335.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [13
 
-<./Images/Load_LLOD_Bbar.pdf><./Images/pressure_Bbar.pdf>]
-<Images/mesh_dependency.pdf, id=925, 331.4129pt x 131.86212pt>
-File: Images/mesh_dependency.pdf Graphic file (type pdf)
-<use Images/mesh_dependency.pdf>
-Package luatex.def Info: Images/mesh_dependency.pdf  used on input line 397.
-(luatex.def)             Requested size: 302.1663pt x 120.22609pt.
+<./Images/volumetric_locking.pdf><./Images/Zset.jpg>]
+<Images/comp_nlgeom-3f_B-bar.pdf, id=581, 2135.68593pt x 515.4657pt>
+File: Images/comp_nlgeom-3f_B-bar.pdf Graphic file (type pdf)
+<use Images/comp_nlgeom-3f_B-bar.pdf>
+Package luatex.def Info: Images/comp_nlgeom-3f_B-bar.pdf  used on input line 36
+7.
+(luatex.def)             Requested size: 335.74263pt x 81.02896pt.
+File: Images/Zset.jpg Graphic file (type jpg)
+<use Images/Zset.jpg>
+Package luatex.def Info: Images/Zset.jpg  used on input line 367.
+(luatex.def)             Requested size: 56.9055pt x 21.44151pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 397.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 367.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [14
 
+<./Images/comp_nlgeom-3f_B-bar.pdf>]
+<Images/Load_LLOD_Bbar.pdf, id=594, 331.40631pt x 330.75937pt>
+File: Images/Load_LLOD_Bbar.pdf Graphic file (type pdf)
+<use Images/Load_LLOD_Bbar.pdf>
+Package luatex.def Info: Images/Load_LLOD_Bbar.pdf  used on input line 402.
+(luatex.def)             Requested size: 117.5094pt x 117.2816pt.
+<Images/pressure_Bbar.pdf, id=595, 1501.74821pt x 1909.01819pt>
+File: Images/pressure_Bbar.pdf Graphic file (type pdf)
+<use Images/pressure_Bbar.pdf>
+Package luatex.def Info: Images/pressure_Bbar.pdf  used on input line 402.
+(luatex.def)             Requested size: 100.7238pt x 128.02298pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 402.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [15
+
+<./Images/Load_LLOD_Bbar.pdf><./Images/pressure_Bbar.pdf>]
+<Images/mesh_dependency.pdf, id=958, 331.4129pt x 131.86212pt>
+File: Images/mesh_dependency.pdf Graphic file (type pdf)
+<use Images/mesh_dependency.pdf>
+Package luatex.def Info: Images/mesh_dependency.pdf  used on input line 425.
+(luatex.def)             Requested size: 302.1663pt x 120.22609pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 425.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [16
+
 <./Images/mesh_dependency.pdf>]
-<Images/comp_kappa.pdf, id=33644, 621.1831pt x 281.7832pt>
+<Images/comp_kappa.pdf, id=33676, 621.1831pt x 281.7832pt>
 File: Images/comp_kappa.pdf Graphic file (type pdf)
 <use Images/comp_kappa.pdf>
-Package luatex.def Info: Images/comp_kappa.pdf  used on input line 446.
+Package luatex.def Info: Images/comp_kappa.pdf  used on input line 474.
 (luatex.def)             Requested size: 170.71652pt x 77.44116pt.
-<Images/elements.pdf, id=33645, 495.15663pt x 535.59087pt>
+<Images/elements.pdf, id=33677, 495.15663pt x 535.59087pt>
 File: Images/elements.pdf Graphic file (type pdf)
 <use Images/elements.pdf>
-Package luatex.def Info: Images/elements.pdf  used on input line 446.
+Package luatex.def Info: Images/elements.pdf  used on input line 474.
 (luatex.def)             Requested size: 113.81102pt x 123.10158pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 446.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 474.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
 
-[15
+[17
 
 <./Images/comp_kappa.pdf><./Images/elements.pdf>] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 461.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [16
-
-]
-<Images/machine_DPT.pdf, id=34031, 267.04456pt x 353.61798pt>
-File: Images/machine_DPT.pdf Graphic file (type pdf)
-<use Images/machine_DPT.pdf>
-Package luatex.def Info: Images/machine_DPT.pdf  used on input line 497.
-(luatex.def)             Requested size: 113.81102pt x 150.70921pt.
-<Images/HEI.png, id=34032, 343.2825pt x 144.54pt>
-File: Images/HEI.png Graphic file (type png)
-<use Images/HEI.png>
-Package luatex.def Info: Images/HEI.png  used on input line 497.
-(luatex.def)             Requested size: 56.9055pt x 23.95833pt.
-<Images/machine_DPT_2.jpg, id=34033, 142.8593pt x 158.32172pt>
-File: Images/machine_DPT_2.jpg Graphic file (type jpg)
-<use Images/machine_DPT_2.jpg>
-Package luatex.def Info: Images/machine_DPT_2.jpg  used on input line 497.
-(luatex.def)             Requested size: 78.24507pt x 86.71725pt.
-<Images/std_disk.pdf, id=34034, 401.24907pt x 343.47873pt>
-File: Images/std_disk.pdf Graphic file (type pdf)
-<use Images/std_disk.pdf>
-Package luatex.def Info: Images/std_disk.pdf  used on input line 497.
-(luatex.def)             Requested size: 56.9055pt x 48.71037pt.
-<Images/rupture_disk.png, id=34035, 769.37437pt x 523.20468pt>
-File: Images/rupture_disk.png Graphic file (type png)
-<use Images/rupture_disk.png>
-Package luatex.def Info: Images/rupture_disk.png  used on input line 497.
-(luatex.def)             Requested size: 113.81102pt x 77.39156pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 497.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
-
-Overfull \vbox (21.44124pt too high) detected at line 497
- []
-
-[17
-
-<./Images/machine_DPT.pdf><./Images/HEI.png><./Images/machine_DPT_2.jpg><./Image
-s/std_disk.pdf><./Images/rupture_disk.png>]
-<Images/disks.pdf, id=34422, 295.84511pt x 135.47888pt>
-File: Images/disks.pdf Graphic file (type pdf)
-<use Images/disks.pdf>
-Package luatex.def Info: Images/disks.pdf  used on input line 520.
-(luatex.def)             Requested size: 302.1663pt x 138.37265pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 520.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 489.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [18
 
-<./Images/disks.pdf>]
-<Images/disks_rupture.pdf, id=44908, 940.7194pt x 253.403pt>
-File: Images/disks_rupture.pdf Graphic file (type pdf)
-<use Images/disks_rupture.pdf>
-Package luatex.def Info: Images/disks_rupture.pdf  used on input line 537.
-(luatex.def)             Requested size: 318.95447pt x 85.91614pt.
+]
+<Images/machine_DPT.pdf, id=34063, 267.04456pt x 353.61798pt>
+File: Images/machine_DPT.pdf Graphic file (type pdf)
+<use Images/machine_DPT.pdf>
+Package luatex.def Info: Images/machine_DPT.pdf  used on input line 525.
+(luatex.def)             Requested size: 113.81102pt x 150.70921pt.
+<Images/HEI.png, id=34064, 343.2825pt x 144.54pt>
+File: Images/HEI.png Graphic file (type png)
+<use Images/HEI.png>
+Package luatex.def Info: Images/HEI.png  used on input line 525.
+(luatex.def)             Requested size: 56.9055pt x 23.95833pt.
+<Images/machine_DPT_2.jpg, id=34065, 142.8593pt x 158.32172pt>
+File: Images/machine_DPT_2.jpg Graphic file (type jpg)
+<use Images/machine_DPT_2.jpg>
+Package luatex.def Info: Images/machine_DPT_2.jpg  used on input line 525.
+(luatex.def)             Requested size: 78.24507pt x 86.71725pt.
+<Images/std_disk.pdf, id=34066, 401.24907pt x 343.47873pt>
+File: Images/std_disk.pdf Graphic file (type pdf)
+<use Images/std_disk.pdf>
+Package luatex.def Info: Images/std_disk.pdf  used on input line 525.
+(luatex.def)             Requested size: 56.9055pt x 48.71037pt.
+<Images/rupture_disk.png, id=34067, 769.37437pt x 523.20468pt>
+File: Images/rupture_disk.png Graphic file (type png)
+<use Images/rupture_disk.png>
+Package luatex.def Info: Images/rupture_disk.png  used on input line 525.
+(luatex.def)             Requested size: 113.81102pt x 77.39156pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 537.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 525.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+Overfull \vbox (21.44124pt too high) detected at line 525
+ []
 
 [19
 
+<./Images/machine_DPT.pdf><./Images/HEI.png><./Images/machine_DPT_2.jpg><./Image
+s/std_disk.pdf><./Images/rupture_disk.png>]
+<Images/disks.pdf, id=34455, 295.84511pt x 135.47888pt>
+File: Images/disks.pdf Graphic file (type pdf)
+<use Images/disks.pdf>
+Package luatex.def Info: Images/disks.pdf  used on input line 548.
+(luatex.def)             Requested size: 302.1663pt x 138.37265pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 548.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [20
+
+<./Images/disks.pdf>]
+<Images/disks_rupture.pdf, id=44940, 940.7194pt x 253.403pt>
+File: Images/disks_rupture.pdf Graphic file (type pdf)
+<use Images/disks_rupture.pdf>
+Package luatex.def Info: Images/disks_rupture.pdf  used on input line 565.
+(luatex.def)             Requested size: 318.95447pt x 85.91614pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 565.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+[21
+
 <./Images/disks_rupture.pdf>]
-<Images/voce_law.png, id=50132, 1324.95pt x 91.34125pt>
+<Images/voce_law.png, id=50166, 1324.95pt x 91.34125pt>
 File: Images/voce_law.png Graphic file (type png)
 <use Images/voce_law.png>
-Package luatex.def Info: Images/voce_law.png  used on input line 594.
+Package luatex.def Info: Images/voce_law.png  used on input line 622.
 (luatex.def)             Requested size: 213.8651pt x 14.74312pt.
 
-Overfull \hbox (13.63445pt too wide) in paragraph at lines 594--594
+Overfull \hbox (13.63445pt too wide) in paragraph at lines 622--622
  [] 
  []
 
-<Images/plot_X52_radial.pdf, id=50133, 289.08pt x 289.48265pt>
+<Images/plot_X52_radial.pdf, id=50167, 289.08pt x 289.48265pt>
 File: Images/plot_X52_radial.pdf Graphic file (type pdf)
 <use Images/plot_X52_radial.pdf>
-Package luatex.def Info: Images/plot_X52_radial.pdf  used on input line 594.
+Package luatex.def Info: Images/plot_X52_radial.pdf  used on input line 622.
 (luatex.def)             Requested size: 111.636pt x 111.78906pt.
-<Images/plot_E355_radial.pdf, id=50134, 289.08pt x 289.48265pt>
+<Images/plot_E355_radial.pdf, id=50168, 289.08pt x 289.48265pt>
 File: Images/plot_E355_radial.pdf Graphic file (type pdf)
 <use Images/plot_E355_radial.pdf>
-Package luatex.def Info: Images/plot_E355_radial.pdf  used on input line 594.
+Package luatex.def Info: Images/plot_E355_radial.pdf  used on input line 622.
 (luatex.def)             Requested size: 111.636pt x 111.78906pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 594.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 622.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
 
-Overfull \vbox (3.67015pt too high) detected at line 594
- []
-
-[20
-
-<./Images/voce_law.png><./Images/plot_X52_radial.pdf><./Images/plot_E355_radial.
-pdf>]
-<Images/all_BC_std.pdf, id=50258, 343.8824pt x 92.56065pt>
-File: Images/all_BC_std.pdf Graphic file (type pdf)
-<use Images/all_BC_std.pdf>
-Package luatex.def Info: Images/all_BC_std.pdf  used on input line 615.
-(luatex.def)             Requested size: 235.01881pt x 63.25958pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 615.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [21
-
-<./Images/ALL_BC_std.pdf>]
-<Images/disks_helium.pdf, id=50616, 773.4874pt x 425.4567pt>
-File: Images/disks_helium.pdf Graphic file (type pdf)
-<use Images/disks_helium.pdf>
-Package luatex.def Info: Images/disks_helium.pdf  used on input line 640.
-(luatex.def)             Requested size: 285.38327pt x 156.97505pt.
-<Images/fracto+simulation.png.pdf, id=50617, 2347.01624pt x 1280.71748pt>
-File: Images/fracto+simulation.png.pdf Graphic file (type pdf)
-<use Images/fracto+simulation.png.pdf>
-Package luatex.def Info: Images/fracto+simulation.png.pdf  used on input line 6
-40.
-(luatex.def)             Requested size: 106.69783pt x 58.21606pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 640.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
-
-Overfull \vbox (3.72368pt too high) detected at line 640
+Overfull \vbox (3.67015pt too high) detected at line 622
  []
 
 [22
 
-<./Images/disks_helium.pdf><./Images/fracto+simulation.png.pdf>]
-<Images/H2_results_E355.pdf, id=52590, 447.43289pt x 329.86124pt>
-File: Images/H2_results_E355.pdf Graphic file (type pdf)
-<use Images/H2_results_E355.pdf>
-Package luatex.def Info: Images/H2_results_E355.pdf  used on input line 651.
-(luatex.def)             Requested size: 285.38327pt x 210.40076pt.
+<./Images/voce_law.png><./Images/plot_X52_radial.pdf><./Images/plot_E355_radial.
+pdf>]
+<Images/all_BC_std.pdf, id=50291, 343.8824pt x 92.56065pt>
+File: Images/all_BC_std.pdf Graphic file (type pdf)
+<use Images/all_BC_std.pdf>
+Package luatex.def Info: Images/all_BC_std.pdf  used on input line 643.
+(luatex.def)             Requested size: 235.01881pt x 63.25958pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 651.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 643.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [23
 
-<./Images/H2_results_E355.pdf>]
-<Images/embrittled_depth.pdf, id=52735, 534.91714pt x 378.55794pt>
-File: Images/embrittled_depth.pdf Graphic file (type pdf)
-<use Images/embrittled_depth.pdf>
-Package luatex.def Info: Images/embrittled_depth.pdf  used on input line 662.
-(luatex.def)             Requested size: 302.1663pt x 213.84518pt.
+<./Images/ALL_BC_std.pdf>]
+<Images/disks_helium.pdf, id=50648, 773.4874pt x 425.4567pt>
+File: Images/disks_helium.pdf Graphic file (type pdf)
+<use Images/disks_helium.pdf>
+Package luatex.def Info: Images/disks_helium.pdf  used on input line 668.
+(luatex.def)             Requested size: 285.38327pt x 156.97505pt.
+<Images/fracto+simulation.png.pdf, id=50649, 2347.01624pt x 1280.71748pt>
+File: Images/fracto+simulation.png.pdf Graphic file (type pdf)
+<use Images/fracto+simulation.png.pdf>
+Package luatex.def Info: Images/fracto+simulation.png.pdf  used on input line 6
+68.
+(luatex.def)             Requested size: 106.69783pt x 58.21606pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 662.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 668.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [24
 
-<./Images/embrittled_depth.pdf>]
-<Images/cases.pdf, id=52937, 563.7213pt x 257.2178pt>
-File: Images/cases.pdf Graphic file (type pdf)
-<use Images/cases.pdf>
-Package luatex.def Info: Images/cases.pdf  used on input line 692.
-(luatex.def)             Requested size: 175.42592pt x 80.04282pt.
-<Images/plot_NT_epcum.pdf, id=52938, 345.23119pt x 327.0539pt>
-File: Images/plot_NT_epcum.pdf Graphic file (type pdf)
-<use Images/plot_NT_epcum.pdf>
-Package luatex.def Info: Images/plot_NT_epcum.pdf  used on input line 692.
-(luatex.def)             Requested size: 151.08315pt x 143.13063pt.
+Overfull \vbox (3.72368pt too high) detected at line 668
+ []
+
+[24
+
+<./Images/disks_helium.pdf><./Images/fracto+simulation.png.pdf>]
+<Images/H2_results_E355.pdf, id=52622, 447.43289pt x 329.86124pt>
+File: Images/H2_results_E355.pdf Graphic file (type pdf)
+<use Images/H2_results_E355.pdf>
+Package luatex.def Info: Images/H2_results_E355.pdf  used on input line 679.
+(luatex.def)             Requested size: 285.38327pt x 210.40076pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 692.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 679.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [25
 
-<./Images/cases.pdf><./Images/plot_NT_epcum.pdf>]
-<Images/table_zoom.pdf, id=52998, 3459.5273pt x 2380.30392pt>
-File: Images/table_zoom.pdf Graphic file (type pdf)
-<use Images/table_zoom.pdf>
-Package luatex.def Info: Images/table_zoom.pdf  used on input line 703.
-(luatex.def)             Requested size: 302.1663pt x 207.89835pt.
+<./Images/H2_results_E355.pdf>]
+<Images/embrittled_depth.pdf, id=52767, 534.91714pt x 378.55794pt>
+File: Images/embrittled_depth.pdf Graphic file (type pdf)
+<use Images/embrittled_depth.pdf>
+Package luatex.def Info: Images/embrittled_depth.pdf  used on input line 690.
+(luatex.def)             Requested size: 302.1663pt x 213.84518pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 703.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 690.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [26
 
+<./Images/embrittled_depth.pdf>]
+<Images/cases.pdf, id=52969, 563.7213pt x 257.2178pt>
+File: Images/cases.pdf Graphic file (type pdf)
+<use Images/cases.pdf>
+Package luatex.def Info: Images/cases.pdf  used on input line 720.
+(luatex.def)             Requested size: 175.42592pt x 80.04282pt.
+<Images/plot_NT_epcum.pdf, id=52970, 345.23119pt x 327.0539pt>
+File: Images/plot_NT_epcum.pdf Graphic file (type pdf)
+<use Images/plot_NT_epcum.pdf>
+Package luatex.def Info: Images/plot_NT_epcum.pdf  used on input line 720.
+(luatex.def)             Requested size: 151.08315pt x 143.13063pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 720.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [27
+
+<./Images/cases.pdf><./Images/plot_NT_epcum.pdf>]
+<Images/table_zoom.pdf, id=53031, 3459.5273pt x 2380.30392pt>
+File: Images/table_zoom.pdf Graphic file (type pdf)
+<use Images/table_zoom.pdf>
+Package luatex.def Info: Images/table_zoom.pdf  used on input line 731.
+(luatex.def)             Requested size: 302.1663pt x 207.89835pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 731.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [28
+
 <./Images/table_zoom.pdf>]
-<Images/sigp1_pressure.pdf, id=53166, 462.528pt x 346.896pt>
+<Images/sigp1_pressure.pdf, id=53199, 462.528pt x 346.896pt>
 File: Images/sigp1_pressure.pdf Graphic file (type pdf)
 <use Images/sigp1_pressure.pdf>
-Package luatex.def Info: Images/sigp1_pressure.pdf  used on input line 733.
+Package luatex.def Info: Images/sigp1_pressure.pdf  used on input line 761.
 (luatex.def)             Requested size: 164.51573pt x 123.38977pt.
-<Images/plot_sigp1_C_edit.pdf, id=53167, 462.52878pt x 346.89757pt>
+<Images/plot_sigp1_C_edit.pdf, id=53200, 462.52878pt x 346.89757pt>
 File: Images/plot_sigp1_C_edit.pdf Graphic file (type pdf)
 <use Images/plot_sigp1_C_edit.pdf>
-Package luatex.def Info: Images/plot_sigp1_C_edit.pdf  used on input line 733.
+Package luatex.def Info: Images/plot_sigp1_C_edit.pdf  used on input line 761.
 (luatex.def)             Requested size: 164.51573pt x 123.39034pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 733.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 761.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [27
+ [29
 
 <./Images/sigp1_pressure.pdf><./Images/plot_sigp1_C_edit.pdf>] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 746.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [28
-
-]
-<Images/machine_fenhyx.pdf, id=53331, 846.24359pt x 760.77095pt>
-File: Images/machine_fenhyx.pdf Graphic file (type pdf)
-<use Images/machine_fenhyx.pdf>
-Package luatex.def Info: Images/machine_fenhyx.pdf  used on input line 791.
-(luatex.def)             Requested size: 131.61308pt x 118.31296pt.
-<Images/TDS_specimen.pdf, id=53332, 482.1637pt x 266.75964pt>
-File: Images/TDS_specimen.pdf Graphic file (type pdf)
-<use Images/TDS_specimen.pdf>
-Package luatex.def Info: Images/TDS_specimen.pdf  used on input line 791.
-(luatex.def)             Requested size: 148.06314pt x 81.91718pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 791.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [29
-
-<./Images/machine_fenhyx.pdf><./Images/TDS_specimen.pdf>]
-<Images/TDS_spectra.pdf, id=53368, 757.84393pt x 254.06628pt>
-File: Images/TDS_spectra.pdf Graphic file (type pdf)
-<use Images/TDS_spectra.pdf>
-Package luatex.def Info: Images/TDS_spectra.pdf  used on input line 812.
-(luatex.def)             Requested size: 318.95447pt x 106.93195pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 812.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 774.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [30
 
+]
+<Images/machine_fenhyx.pdf, id=53364, 846.24359pt x 760.77095pt>
+File: Images/machine_fenhyx.pdf Graphic file (type pdf)
+<use Images/machine_fenhyx.pdf>
+Package luatex.def Info: Images/machine_fenhyx.pdf  used on input line 819.
+(luatex.def)             Requested size: 131.61308pt x 118.31296pt.
+<Images/TDS_specimen.pdf, id=53365, 482.1637pt x 266.75964pt>
+File: Images/TDS_specimen.pdf Graphic file (type pdf)
+<use Images/TDS_specimen.pdf>
+Package luatex.def Info: Images/TDS_specimen.pdf  used on input line 819.
+(luatex.def)             Requested size: 148.06314pt x 81.91718pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 819.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [31
+
+<./Images/machine_fenhyx.pdf><./Images/TDS_specimen.pdf>]
+<Images/TDS_spectra.pdf, id=53401, 757.84393pt x 254.06628pt>
+File: Images/TDS_spectra.pdf Graphic file (type pdf)
+<use Images/TDS_spectra.pdf>
+Package luatex.def Info: Images/TDS_spectra.pdf  used on input line 840.
+(luatex.def)             Requested size: 318.95447pt x 106.93195pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 840.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [32
+
 <./Images/TDS_spectra.pdf>]
-<Images/TDS_BC.pdf, id=53431, 1242.85178pt x 875.04259pt>
+<Images/TDS_BC.pdf, id=53464, 1242.85178pt x 875.04259pt>
 File: Images/TDS_BC.pdf Graphic file (type pdf)
 <use Images/TDS_BC.pdf>
-Package luatex.def Info: Images/TDS_BC.pdf  used on input line 853.
+Package luatex.def Info: Images/TDS_BC.pdf  used on input line 881.
 (luatex.def)             Requested size: 174.58517pt x 122.90569pt.
-<Images/plot_time_stress.pdf, id=53432, 345.4506pt x 345.4506pt>
+<Images/plot_time_stress.pdf, id=53465, 345.4506pt x 345.4506pt>
 File: Images/plot_time_stress.pdf Graphic file (type pdf)
 <use Images/plot_time_stress.pdf>
-Package luatex.def Info: Images/plot_time_stress.pdf  used on input line 853.
+Package luatex.def Info: Images/plot_time_stress.pdf  used on input line 881.
 (luatex.def)             Requested size: 116.33748pt x 116.33417pt.
-<Images/NT_TDS.pdf, id=53433, 334.79005pt x 327.05412pt>
+<Images/NT_TDS.pdf, id=53466, 334.79005pt x 327.05412pt>
 File: Images/NT_TDS.pdf Graphic file (type pdf)
 <use Images/NT_TDS.pdf>
-Package luatex.def Info: Images/NT_TDS.pdf  used on input line 853.
+Package luatex.def Info: Images/NT_TDS.pdf  used on input line 881.
 (luatex.def)             Requested size: 111.636pt x 109.05603pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 853.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 881.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
 
-Overfull \vbox (5.48222pt too high) detected at line 853
+Overfull \vbox (5.48222pt too high) detected at line 881
  []
 
-[31
+[33
 
 <./Images/TDS_BC.pdf><./Images/plot_time_stress.pdf><./Images/NT_TDS.pdf>]
-<Images/strain_effect.pdf, id=53858, 975.96315pt x 371.65399pt>
+<Images/strain_effect.pdf, id=53890, 975.96315pt x 371.65399pt>
 File: Images/strain_effect.pdf Graphic file (type pdf)
 <use Images/strain_effect.pdf>
-Package luatex.def Info: Images/strain_effect.pdf  used on input line 877.
+Package luatex.def Info: Images/strain_effect.pdf  used on input line 905.
 (luatex.def)             Requested size: 335.74263pt x 127.85214pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 877.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 905.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
 
-[32
+[34
 
 <./Images/strain_effect.pdf>]
-<Images/resting_time.pdf, id=57227, 317.84935pt x 120.70856pt>
+<Images/resting_time.pdf, id=57260, 317.84935pt x 120.70856pt>
 File: Images/resting_time.pdf Graphic file (type pdf)
 <use Images/resting_time.pdf>
-Package luatex.def Info: Images/resting_time.pdf  used on input line 896.
+Package luatex.def Info: Images/resting_time.pdf  used on input line 924.
 (luatex.def)             Requested size: 335.74263pt x 127.50471pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 896.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [33
-
-<./Images/resting_time.pdf>]
-<Images/strain_rate_effect.pdf, id=58403, 345.2464pt x 345.4506pt>
-File: Images/strain_rate_effect.pdf Graphic file (type pdf)
-<use Images/strain_rate_effect.pdf>
-Package luatex.def Info: Images/strain_rate_effect.pdf  used on input line 931.
-
-(luatex.def)             Requested size: 135.9739pt x 136.05351pt.
-<Images/C_field_strain_rate_effect.pdf, id=58404, 998.58588pt x 308.86096pt>
-File: Images/C_field_strain_rate_effect.pdf Graphic file (type pdf)
-<use Images/C_field_strain_rate_effect.pdf>
-Package luatex.def Info: Images/C_field_strain_rate_effect.pdf  used on input l
-ine 931.
-(luatex.def)             Requested size: 218.23065pt x 67.49718pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 931.
-(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
- [34
-
-<./Images/strain_rate_effect.pdf><./Images/C_field_strain_rate_effect.pdf>]
-<Images/Dwell_No_Dwell.pdf, id=61000, 932.64058pt x 345.45097pt>
-File: Images/Dwell_No_Dwell.pdf Graphic file (type pdf)
-<use Images/Dwell_No_Dwell.pdf>
-Package luatex.def Info: Images/Dwell_No_Dwell.pdf  used on input line 950.
-(luatex.def)             Requested size: 335.74263pt x 124.35698pt.
-File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
-<use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 950.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 924.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [35
 
-<./Images/Dwell_No_Dwell.pdf>] (./save.toc)
+<./Images/resting_time.pdf>]
+<Images/strain_rate_effect.pdf, id=58435, 345.2464pt x 345.4506pt>
+File: Images/strain_rate_effect.pdf Graphic file (type pdf)
+<use Images/strain_rate_effect.pdf>
+Package luatex.def Info: Images/strain_rate_effect.pdf  used on input line 959.
+
+(luatex.def)             Requested size: 135.9739pt x 136.05351pt.
+<Images/C_field_strain_rate_effect.pdf, id=58436, 998.58588pt x 308.86096pt>
+File: Images/C_field_strain_rate_effect.pdf Graphic file (type pdf)
+<use Images/C_field_strain_rate_effect.pdf>
+Package luatex.def Info: Images/C_field_strain_rate_effect.pdf  used on input l
+ine 959.
+(luatex.def)             Requested size: 218.23065pt x 67.49718pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 963.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 959.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [36
 
-] (./save.toc)
+<./Images/strain_rate_effect.pdf><./Images/C_field_strain_rate_effect.pdf>]
+<Images/Dwell_No_Dwell.pdf, id=61033, 932.64058pt x 345.45097pt>
+File: Images/Dwell_No_Dwell.pdf Graphic file (type pdf)
+<use Images/Dwell_No_Dwell.pdf>
+Package luatex.def Info: Images/Dwell_No_Dwell.pdf  used on input line 978.
+(luatex.def)             Requested size: 335.74263pt x 124.35698pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 977.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 978.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [37
 
-] (./save.toc)
+<./Images/Dwell_No_Dwell.pdf>] (./save.toc)
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
 Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 991.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [38
 
+] (./save.toc)
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1005.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [39
+
+] (./save.toc)
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1019.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [40
+
 ]
-<TEMPLATE_IMAGES/MINES.png, id=64531, 1083.04625pt x 340.27126pt>
+<TEMPLATE_IMAGES/MINES.png, id=64563, 1083.04625pt x 340.27126pt>
 File: TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 1044.
+Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 1071.
 (luatex.def)             Requested size: 120.8698pt x 37.96992pt.
-<TEMPLATE_IMAGES/MESSIAH.pdf, id=64532, 116.33302pt x 74.58894pt>
+<TEMPLATE_IMAGES/MESSIAH.pdf, id=64564, 116.33302pt x 74.58894pt>
 File: TEMPLATE_IMAGES/MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/MESSIAH.pdf>
-Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 1044.
+Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 1071.
 (luatex.def)             Requested size: 67.14749pt x 43.05446pt.
-<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=64533, 2799.98439pt x 218.4091pt>
+<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=64565, 2799.98439pt x 218.4091pt>
 File: TEMPLATE_IMAGES/logos_MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/logos_MESSIAH.pdf>
 Package luatex.def Info: TEMPLATE_IMAGES/logos_MESSIAH.pdf  used on input line 
-1044.
+1071.
 (luatex.def)             Requested size: 335.74263pt x 26.18796pt.
 
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 1044--1044
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 1071--1071
  [] 
  []
 
-[39
+[41
 
 <./TEMPLATE_IMAGES/MINES.png><./TEMPLATE_IMAGES/MESSIAH.pdf><./TEMPLATE_IMAGES/l
 ogos_MESSIAH.pdf>]
@@ -2164,21 +2188,21 @@ ogos_MESSIAH.pdf>]
 \openout9 = save.snm
  (./save.aux)
 Package rerunfilecheck Info: File `save.out' has not changed.
-(rerunfilecheck)             Checksum: 280BB7121E1D255A2ABC7BC0F790F2B5;1733.
+(rerunfilecheck)             Checksum: 700EB5FE7551AA526489FE71C2D60163;1733.
 Package logreq Info: Writing requests to 'save.run.xml'.
 
 \openout1 = save.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 40552 strings out of 477805
+ 40584 strings out of 477805
  125176,1648299 words of node,token memory allocated
- 4989 words of node memory still in use:
-   68 hlist, 11 vlist, 10 rule, 10 local_par, 10 math, 136 glue, 88 kern, 41 pen
-alty, 65 glyph, 493 attribute, 73 glue_spec, 248 attribute_list, 4 write, 24 pdf
+ 5010 words of node memory still in use:
+   68 hlist, 11 vlist, 10 rule, 10 local_par, 10 math, 136 glue, 91 kern, 41 pen
+alty, 65 glyph, 495 attribute, 73 glue_spec, 249 attribute_list, 4 write, 24 pdf
 _literal, 16 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
    avail lists: 1:3,2:868,3:367,4:352,5:234,6:49,7:2059,8:40,9:654,10:17,11:160
- 58815 multiletter control sequences out of 65536+600000
+ 58825 multiletter control sequences out of 65536+600000
  143 fonts using 10298471 bytes
  128i,14n,115p,736b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/t
@@ -2201,10 +2225,10 @@ b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
 ve/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on save.pdf (39 pages, 25285286 bytes).
+Output written on save.pdf (41 pages, 25853499 bytes).
 
-PDF statistics: 64688 PDF objects out of 66169 (max. 8388607)
- 42875 compressed objects within 429 object streams
- 89 named destinations out of 1000 (max. 131072)
+PDF statistics: 64721 PDF objects out of 66169 (max. 8388607)
+ 42900 compressed objects within 429 object streams
+ 93 named destinations out of 1000 (max. 131072)
  166 words of extra memory for PDF output out of 10000 (max. 100000000)
 
