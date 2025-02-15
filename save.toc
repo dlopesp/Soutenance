@@ -4,7 +4,6 @@
 \beamer@sectionintoc {3}{Finite element formulation}{12}{0}{3}
 \beamer@sectionintoc {4}{Numerical simulations}{18}{0}{4}
 \beamer@subsectionintoc {4}{1}{Pressurized disks tests}{18}{0}{4}
-\beamer@subsectionintoc {4}{2}{Hydrogen uptake during a tensile test}{30}{0}{4}
-\beamer@subsectionintoc {4}{3}{Hydrogen embrittlement modeling}{38}{0}{4}
-\beamer@subsectionintoc {4}{4}{Simulation of fracture toughness tests}{39}{0}{4}
-\beamer@sectionintoc {5}{Conclusions and perspectives}{40}{0}{5}
+\beamer@subsectionintoc {4}{2}{Hydrogen embrittlement modeling}{30}{0}{4}
+\beamer@subsectionintoc {4}{3}{Simulation of fracture toughness tests}{38}{0}{4}
+\beamer@sectionintoc {5}{Conclusions and perspectives}{39}{0}{5}

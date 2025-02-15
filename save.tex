@@ -8,13 +8,16 @@
 \usefonttheme[onlymath]{serif} 
 \usepackage{etoolbox}
 \usepackage{xcolor}
-\usepackage{gensymb}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{pdfpages}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{animate}
 \usepackage{booktabs}
 \usepackage{verbatim}
 \usepackage{biblatex}
+\usepackage{tikz}
+\usepackage{media9}
 \addbibresource{dlpbibli.bib}
 
 % Defining new colors
@@ -103,7 +106,7 @@
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{Images/plateau_plane_strain.pdf}
+    \includegraphics[width=0.75\textwidth]{Images/plateau_plane_strain.pdf}
 \end{figure}
 
 
@@ -111,7 +114,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Objectives}
+\begin{frame}{Main objectives}
 
 \begin{itemize}
     \item Develop a model coupling \textbf{plasticity}, \textbf{damage}, and \textbf{hydrogen diffusion}
@@ -650,8 +653,6 @@
 \begin{frame}{Results under helium}
 
 \begin{itemize}
-	\item Experiments carried out by Luciano Santana
-	\vspace{0.15cm}
 	\item Successfully modification of fracture location
 	\vspace{0.15cm}
 	\item Failure is primarily driven by plasticity and occurs \\ under a limit load scenario
@@ -667,6 +668,10 @@
 \begin{tikzpicture}[remember picture, overlay]
     	\node at (current page.south west) [xshift=10.2cm, yshift=7.5cm] {\includegraphics[width=3.75cm]{Images/fracto+simulation.png}}; 
     \end{tikzpicture}
+    
+    \begin{textblock}{6}(5.75,14.75)
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+    \end{textblock}
 
 \end{frame}
 
@@ -679,6 +684,10 @@
 	\includegraphics[width=0.85\textwidth]{Images/H2_results_E355.pdf} \\
 \end{figure}
 
+    \begin{textblock}{6}(5.75,14.9)
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+    \end{textblock}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -689,6 +698,10 @@
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/embrittled_depth.pdf} \\
 \end{figure}
+
+    \begin{textblock}{6}(5.75,14.95)
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+    \end{textblock}
 
 \end{frame}
 
@@ -765,220 +778,220 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Hydrogen uptake during a tensile test}
-
-\begin{frame}{Outline}
-	\tableofcontents[ 
-    currentsubsection, 
-    hideothersubsections, 
-    sectionstyle=show/shaded, 
-    subsectionstyle=show/shaded, 
-    ] 
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Experimental procedure}
-
-\textbf{\textcolor{MINESBlue}{\large Tensile test:}}
-\vspace{0.1cm}
-\begin{itemize}
-	\item Material: X52 vintage steel
-	\vspace{0.1cm}
-	\item Gaseous atmosphere under different conditions:
-\vspace{0.1cm}
-\begin{table}[ht!]
-	\small
-    \centering
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{ll}
-    \textbf{Environment}                 & Air, 85 bar H$_\text{2}$                               \\ \hline
-    \textbf{Strain}                 & 0\%, 30\%Rp02, 90\%Rp02, 3\%, 6\%, 12\%             \\ \hline
-    \textbf{Strain Rate (s$^{-1}$)} & $1\times10^{-5}$, $1\times10^{-4}$, $1\times10^{-3}$ \\ \hline
-    \textbf{Dwell}                       & No dwell, Dwell                                     
-    \end{tabular}
-\end{table}
-	
-\end{itemize}
-
-\begin{columns}
-
-\begin{column}{0.49\textwidth}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.8\textwidth]{Images/machine_fenhyx.pdf} \\
-	\end{figure}
-\end{column}
-
-\begin{column}{0.49\textwidth}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.9\textwidth]{Images/TDS_specimen.pdf} \\
-	\end{figure}
-\end{column}
-
-\end{columns}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Experimental procedure}
-
-\textbf{\textcolor{MINESBlue}{\large Thermal Desorption Spectroscopy (TDS) test:}}
-\vspace{0.15cm}
-\begin{itemize}
-	\item High precision (10$^{-3}$ wppm), calibration with a Certified Reference Material (CRM) with a known hydrogen mass
-	\vspace{0.15cm}
-	\item Temperature ramp of 10$^{\circ}$C/min up to 600$^{\circ}$C 
-	\vspace{0.15cm}
-	\item The hydrogen content is determined by integrating the first peak in the TDS spectra
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.95\textwidth]{Images/TDS_spectra.pdf} \\
-\end{figure}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Simulation model}
-
-\begin{columns}
-
-\begin{column}{0.65\textwidth}
-
-\begin{itemize}
-	\item 3D mesh of 1/8 of the specimen (plane strain)
-	\vspace{0.15cm}
-	\item Elasto(visco)-plastic behavior
-	\vspace{0.15cm}
-	\item Hydrogen applied to the exposed surfaces
-	\vspace{0.15cm}
-	\item $N_T(\kappa)$ adjusted based on experimental results at different strain levels
-\end{itemize}
-
-	\vspace{0.25cm}
-
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.8\textwidth]{Images/TDS_BC.pdf} \\
-	\end{figure}
-	
-	\vspace{0.15cm}
-
-\end{column}
-
-\begin{column}{0.35\textwidth}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.99\textwidth]{Images/plot_time_stress.pdf} \\
-		\includegraphics[width=0.95\textwidth]{Images/NT_TDS.pdf}
-	\end{figure}
-\end{column}
-
-\end{columns}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Strain effect}
-
-\begin{itemize}
-	\item Specimens deformed up to 90\%Rp02, 3\%, 6\% and 12\% at 
-	$\dot{\varepsilon} = 1\times10^{-4}$ s$^{-1}$
-	\vspace{0.15cm}
-	\item Higher strain levels lead to higher hydrogen concentrations
-	\vspace{0.15cm}
-	\item Most of hydrogen is located at the gauge length
-	\vspace{0.15cm}
-	\item For all cases, hydrogen is mostly located near the surface
-\end{itemize}
-
-\vspace{0.15cm}
-
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{Images/strain_effect.pdf} \\
-	\end{figure}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Strain effect}
-
-	\begin{itemize}
-		\item The preparations required before the TDS test takes approximately \textbf{one hour}, at which hydrogen can freely desorb the specimen
-		\vspace{0.15cm}
-		\item The amount of hydrogen that leaves the specimen during resting is lower at higher strains
-		\vspace{0.15cm}
-		\item With the actual model, at least 80\% of the hydrogen content leaves the specimen during resting
-	\end{itemize}
-
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{Images/resting_time.pdf} \\
-	\end{figure}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Strain rate effect}
-
-\begin{columns}
-
-\begin{column}{0.55\textwidth}
-\begin{itemize}
-	\item Tests conducted at three different strain rates: $1\times10^{-3}$, $1\times10^{-4}$ and $1\times10^{-5}$ s$^{-1}$
-	\vspace{0.25cm}
-	\item One-hour resting time allowing hydrogen desorption is considered
-	\vspace{0.25cm}
-	\item \textbf{Lower strain rates} lead to \textbf{higher hydrogen content}, as hydrogen has more time to diffuse throughout the material
-\end{itemize}
-\end{column}
-
-\begin{column}{0.45\textwidth}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\textwidth]{Images/strain_rate_effect.pdf} \\
-	\vspace{0.25cm}
-%	\includegraphics[width=\textwidth]{Images/C_field_strain_rate_effect.pdf}
-\end{figure}
-
-\end{column}
-\end{columns}
-
-\begin{figure}
-		\centering
-		\includegraphics[width=0.65\textwidth]{Images/C_field_strain_rate_effect.pdf} \\
-	\end{figure}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Dwell effect}
-
-\begin{itemize}
-	\item \textbf{Dwell time:} the time a specimen is exposed to hydrogen without further deformation until it reaches the same exposure time as the most deformed specimen (12\%)
-	\vspace{0.25cm}
-	\item Specimens deformed up to 3\% strain at $1\times10^{-4}$ $1\times10^{-5}$ s$^{-1}$
-	\vspace{0.25cm}
-	\item Longer exposure $\rightarrow$ Higher hydrogen content
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Images/Dwell_No_Dwell.pdf} 
-\end{figure}
-
-\end{frame}
+%\subsection{Hydrogen uptake during a tensile test}
+%
+%\begin{frame}{Outline}
+%	\tableofcontents[ 
+%    currentsubsection, 
+%    hideothersubsections, 
+%    sectionstyle=show/shaded, 
+%    subsectionstyle=show/shaded, 
+%    ] 
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Experimental procedure}
+%
+%\textbf{\textcolor{MINESBlue}{\large Tensile test:}}
+%\vspace{0.1cm}
+%\begin{itemize}
+%	\item Material: X52 vintage steel
+%	\vspace{0.1cm}
+%	\item Gaseous atmosphere under different conditions:
+%\vspace{0.1cm}
+%\begin{table}[ht!]
+%	\small
+%    \centering
+%    \renewcommand{\arraystretch}{1.5}
+%    \begin{tabular}{ll}
+%    \textbf{Environment}                 & Air, 85 bar H$_\text{2}$                               \\ \hline
+%    \textbf{Strain}                 & 0\%, 30\%Rp02, 90\%Rp02, 3\%, 6\%, 12\%             \\ \hline
+%    \textbf{Strain Rate (s$^{-1}$)} & $1\times10^{-5}$, $1\times10^{-4}$, $1\times10^{-3}$ \\ \hline
+%    \textbf{Dwell}                       & No dwell, Dwell                                     
+%    \end{tabular}
+%\end{table}
+%	
+%\end{itemize}
+%
+%\begin{columns}
+%
+%\begin{column}{0.49\textwidth}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.8\textwidth]{Images/machine_fenhyx.pdf} \\
+%	\end{figure}
+%\end{column}
+%
+%\begin{column}{0.49\textwidth}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.9\textwidth]{Images/TDS_specimen.pdf} \\
+%	\end{figure}
+%\end{column}
+%
+%\end{columns}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Experimental procedure}
+%
+%\textbf{\textcolor{MINESBlue}{\large Thermal Desorption Spectroscopy (TDS) test:}}
+%\vspace{0.15cm}
+%\begin{itemize}
+%	\item High precision (10$^{-3}$ wppm), calibration with a Certified Reference Material (CRM) with a known hydrogen mass
+%	\vspace{0.15cm}
+%	\item Temperature ramp of 10$^{\circ}$C/min up to 600$^{\circ}$C 
+%	\vspace{0.15cm}
+%	\item The hydrogen content is determined by integrating the first peak in the TDS spectra
+%\end{itemize}
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{Images/TDS_spectra.pdf} \\
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Simulation model}
+%
+%\begin{columns}
+%
+%\begin{column}{0.65\textwidth}
+%
+%\begin{itemize}
+%	\item 3D mesh of 1/8 of the specimen (plane strain)
+%	\vspace{0.15cm}
+%	\item Elasto(visco)-plastic behavior
+%	\vspace{0.15cm}
+%	\item Hydrogen applied to the exposed surfaces
+%	\vspace{0.15cm}
+%	\item $N_T(\kappa)$ adjusted based on experimental results at different strain levels
+%\end{itemize}
+%
+%	\vspace{0.25cm}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.8\textwidth]{Images/TDS_BC.pdf} \\
+%	\end{figure}
+%	
+%	\vspace{0.15cm}
+%
+%\end{column}
+%
+%\begin{column}{0.35\textwidth}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.99\textwidth]{Images/plot_time_stress.pdf} \\
+%		\includegraphics[width=0.95\textwidth]{Images/NT_TDS.pdf}
+%	\end{figure}
+%\end{column}
+%
+%\end{columns}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Strain effect}
+%
+%\begin{itemize}
+%	\item Specimens deformed up to 90\%Rp02, 3\%, 6\% and 12\% at 
+%	$\dot{\varepsilon} = 1\times10^{-4}$ s$^{-1}$
+%	\vspace{0.15cm}
+%	\item Higher strain levels lead to higher hydrogen concentrations
+%	\vspace{0.15cm}
+%	\item Most of hydrogen is located at the gauge length
+%	\vspace{0.15cm}
+%	\item For all cases, hydrogen is mostly located near the surface
+%\end{itemize}
+%
+%\vspace{0.15cm}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=\textwidth]{Images/strain_effect.pdf} \\
+%	\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Strain effect}
+%
+%	\begin{itemize}
+%		\item The preparations required before the TDS test takes approximately \textbf{one hour}, at which hydrogen can freely desorb the specimen
+%		\vspace{0.15cm}
+%		\item The amount of hydrogen that leaves the specimen during resting is lower at higher strains
+%		\vspace{0.15cm}
+%		\item With the actual model, at least 80\% of the hydrogen content leaves the specimen during resting
+%	\end{itemize}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=\textwidth]{Images/resting_time.pdf} \\
+%	\end{figure}
+%
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Strain rate effect}
+%
+%\begin{columns}
+%
+%\begin{column}{0.55\textwidth}
+%\begin{itemize}
+%	\item Tests conducted at three different strain rates: $1\times10^{-3}$, $1\times10^{-4}$ and $1\times10^{-5}$ s$^{-1}$
+%	\vspace{0.25cm}
+%	\item One-hour resting time allowing hydrogen desorption is considered
+%	\vspace{0.25cm}
+%	\item \textbf{Lower strain rates} lead to \textbf{higher hydrogen content}, as hydrogen has more time to diffuse throughout the material
+%\end{itemize}
+%\end{column}
+%
+%\begin{column}{0.45\textwidth}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{Images/strain_rate_effect.pdf} \\
+%	\vspace{0.25cm}
+%%	\includegraphics[width=\textwidth]{Images/C_field_strain_rate_effect.pdf}
+%\end{figure}
+%
+%\end{column}
+%\end{columns}
+%
+%\begin{figure}
+%		\centering
+%		\includegraphics[width=0.65\textwidth]{Images/C_field_strain_rate_effect.pdf} \\
+%	\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}{Dwell effect}
+%
+%\begin{itemize}
+%	\item \textbf{Dwell time:} the time a specimen is exposed to hydrogen without further deformation until it reaches the same exposure time as the most deformed specimen (12\%)
+%	\vspace{0.25cm}
+%	\item Specimens deformed up to 3\% strain at $1\times10^{-4}$ $1\times10^{-5}$ s$^{-1}$
+%	\vspace{0.25cm}
+%	\item Longer exposure $\rightarrow$ Higher hydrogen content
+%\end{itemize}
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=\textwidth]{Images/Dwell_No_Dwell.pdf} 
+%\end{figure}
+%
+%\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -993,6 +1006,300 @@
     ] 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Database and material coefficients}
+
+    \begin{itemize}
+        \item \textbf{Database}: Briottet \textit{et al.}, 2012 and Moro \textit{et al.}, 2010: \textit{Effect of gaseous hydrogen on the mechanical properties of steel}
+        
+        \vspace{0.15cm}
+
+        \item \textbf{Material:} high-strength steel (API X80 grade) in an environment of hydrogen and neutral gas
+        
+        \vspace{0.15cm}   
+
+    \end{itemize}
+    
+\begin{columns}
+
+	\begin{column}{0.6\textwidth}
+
+	\begin{itemize}
+
+		\item As HE corresponds to \textbf{quasi-cleavage}, a \textbf{stress dependance} is introduced to the nucleation law
+                
+		\vspace{0.15cm}
+                
+        \item The function expressing the nucleation rate due to quasi-cleavage is:
+                
+		\begin{equation*}
+                    \textcolor{NewRed}{B_n(C)} = \frac{\textcolor{DarkGreen}{B_0}}{\textcolor{DarkGreen}{\sigma_C^0}} (\sigma_I - (1-q_1 f_{*})\textcolor{blue}{\sigma_C})
+		\end{equation*}
+
+		\vspace{0.15cm}
+
+		\item Hydrogen decreases the critical stress to trigger void nucleation
+        
+	\end{itemize}
+
+	\end{column}
+    
+    \begin{column}{0.4\textwidth}
+
+	\begin{figure}
+		\begin{tabular}{c}
+			\includegraphics[width=0.95\textwidth]{Images/plot_sig_c.pdf}
+		\end{tabular}
+	\end{figure}
+
+	\begin{textblock}{5}(11.5,14.15)
+		\textcolor{DarkGreen}{\footnotesize (Material parameters)}
+	\end{textblock}
+
+	\end{column}
+    
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Tensile tests}
+
+    \begin{itemize}
+        \item Tensile tests under different strain rates under hydrogen gas
+        \vspace{0.15cm}
+        \item Slower rates lead to important ductility losses
+    \end{itemize}
+    
+    \begin{columns}
+    
+        \begin{column}{0.45\textwidth}
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.9\textwidth]{Images/ST_specimen_Moro_BC.pdf}\\
+                    \\
+                    \includegraphics[width=0.8\textwidth]{Images/fracture_surface.png}\\
+                \end{tabular}
+            \end{figure}
+            \centering \scriptsize \textcolor{gray}{(Experimental data: Briottet \textit{et al.}, 2012)}
+        \end{column}
+    
+    
+        \begin{column}{0.55\textwidth}
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.6\textwidth]{Images/calcul_pl.pdf}\\
+                    \\
+                    \includegraphics[width=0.7\textwidth]{Images/fig_ST_sim_edt.pdf}\\
+                \end{tabular}
+            \end{figure} 
+        \end{column}
+    
+    \end{columns}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Tensile tests}
+
+    \begin{itemize}
+        \item Different damage evolution under hydrogen environment
+        \vspace{0.15cm}
+        \item Multicrack initiation on the surface
+    \end{itemize}
+
+    \vspace{4.5cm}
+
+% ------------------------------------------------
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node at (current page.south west) [xshift=4.5cm, yshift=4cm] {\includegraphics[width=0.7\textwidth]{Images/fig_ST_f_edt.pdf}}; 
+\end{tikzpicture}
+
+% ------------------------------------------------
+
+    \begin{tikzpicture}[remember picture, overlay]
+    
+        \node at (current page.south west) [xshift=10.9cm, yshift=4.15cm]{
+            \includemedia[
+            % width=0.8\linewidth,height=0.6\linewidth, 
+            width=0.3\textwidth,
+            activate=onclick,
+            passcontext, % Keep the \pause, etc. working in overlays
+            addresource=Images/anim_surf_cracks/output.mp4, % chemin de votre fichier vidéo
+            flashvars={
+                source=Images/anim_surf_cracks/output.mp4   % chemin de votre fichier vidéo
+                &autoPlay=true     % autoplay de la vidéo
+                &loop=true         % lire en boucle
+            }
+        ]{\includegraphics[width=0.3\textwidth]{Images/anim_surf_cracks/anim0159.png}}{VPlayer.swf}};
+    
+    \end{tikzpicture}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Pressurized disk tests}
+    \textbf{Hydrogen effect:}
+
+    \vspace{0.2cm}
+
+    \begin{itemize}
+        \item Lower pressure at rupture with decreased ductility
+        \vspace{0.15cm}
+        \item Higher hydrogen concentration in the rupture zone
+    \end{itemize}
+
+    \vspace{0.1cm}
+
+    \begin{columns}
+
+        \begin{column}{0.45\textwidth}
+
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.9\textwidth]{Images/fig_disk_tP.pdf}\\
+                \end{tabular}
+            \end{figure}
+
+        \end{column}
+    
+        \begin{column}{0.55\textwidth}
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.9\textwidth]{Images/fig_iso_values_disk.pdf}\\
+                \end{tabular}
+            \end{figure}
+        \end{column}
+    
+    \end{columns}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Pressurized disk tests}
+
+    \textbf{Effect of the pressurization rate:}
+    \vspace{0.15cm}
+
+    \begin{itemize}
+        \item Tests under different pressurization rates on H$_{\textrm{e}}$ and H$_2$ gases
+        \vspace{0.15cm}
+        \item \textbf{Lower pressurization rate} $\rightarrow$ \textbf{Higher embrittlement} since has a longer time to diffuse
+    \end{itemize}
+
+    \begin{columns}
+
+        \begin{column}{0.45\textwidth}
+
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.9\textwidth]{Images/fig_disk_Pr_edt.pdf}\\
+                \end{tabular}
+            \end{figure}
+
+            \centering \hspace{0.8cm} \scriptsize \textcolor{gray}{(Experimental data: Briottet \textit{et al.}, 2012)}
+
+        \end{column}
+    
+        \begin{column}{0.55\textwidth}
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.9\textwidth]{Images/C_P_rate.pdf}\\
+                \end{tabular}
+            \end{figure}
+        \end{column}
+    
+    \end{columns}   
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Fracture toughness tests}
+
+
+    \begin{itemize}
+        \item 2D Compact Tension (CT) specimen - \textit{plane strain}
+        \vspace{0.1cm}
+        \item Uniaxial imposed displacement
+        \vspace{0.1cm}
+        \item Environment: air and hydrogen (30 MPa)
+        \vspace{0.1cm}
+        \item Lattice concentration (\textcolor{DarkGreen}{$C_L$}) derived from Sieverts' law imposed on the newly formed crack
+    \end{itemize}
+
+    \vspace{0.25cm}
+
+    \begin{columns}
+
+        \begin{column}{0.4\textwidth}
+
+            \begin{figure}
+                \begin{tabular}{c}
+                    \includegraphics[width=0.85\textwidth]{Images/CT_specimen.pdf}\\
+                \end{tabular}
+            \end{figure}
+
+        \end{column}
+    
+        \begin{column}{0.6\textwidth}
+
+        \begin{figure}
+            \begin{tabular}{c}
+                \includegraphics[width=0.9\textwidth]{Images/CT_BC.pdf}\\
+            \end{tabular}
+        \end{figure}
+
+        \end{column}
+    
+    \end{columns}  
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Fracture toughness tests}
+
+    \begin{itemize}
+        \item Crack length: post-processing considering broken elements $f_* = 0.99 \times 1/q_1$
+        \vspace{0.15cm}
+        \item $J$ computation: ASTM E1820 standard considering the simulated Load-CMOD curve
+    \end{itemize}
+
+\vspace{5cm}
+
+% --------------------------------------------------
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node at (current page.south west) [xshift=3.cm, yshift=3.25cm] {\includegraphics[width=5.5cm]{Images/J_da.pdf}}; 
+\end{tikzpicture}
+
+% --------------------------------------------------
+
+\begin{tikzpicture}[remember picture, overlay]
+    
+    \node at (current page.south west) [xshift=9.5cm, yshift=3.4cm]{
+        \includemedia[
+        width=0.55\textwidth,
+        activate=onclick,
+        passcontext, % Keep the \pause, etc. working in overlays
+        addresource=Images/anim_CT/output.mp4, % chemin de votre fichier vidéo
+        flashvars={
+            source=Images/anim_CT/output.mp4   % chemin de votre fichier vidéo
+            &autoPlay=true     % autoplay de la vidéo
+            &loop=true         % lire en boucle
+        }
+    ]{\includegraphics[width=0.55\textwidth]{Images/anim_CT/anim00.png}}{VPlayer.swf}};
+
+\end{tikzpicture}
+    
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
