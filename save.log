@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  15 FEB 2025 15:39
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.3.27)  17 FEB 2025 21:50
  restricted system commands enabled.
 **save.tex
 (./save.tex
@@ -2191,36 +2191,362 @@ Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1315.
 
 [38
 
-] (./save.toc)
+]
+<Images/CT_mDCT_specimens_X52.pdf, id=57681, 1156.58907pt x 457.7542pt>
+File: Images/CT_mDCT_specimens_X52.pdf Graphic file (type pdf)
+<use Images/CT_mDCT_specimens_X52.pdf>
+Package luatex.def Info: Images/CT_mDCT_specimens_X52.pdf  used on input line 1
+339.
+(luatex.def)             Requested size: 302.1663pt x 119.59302pt.
 File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use ./TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1329.
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1339.
 (luatex.def)             Requested size: 63.37695pt x 19.91684pt.
  [39
 
+<./Images/CT_mDCT_specimens_X52.pdf>]
+<Images/nlgeom_si_ig.pdf, id=57696, 72.53851pt x 29.27722pt>
+File: Images/nlgeom_si_ig.pdf Graphic file (type pdf)
+<use Images/nlgeom_si_ig.pdf>
+Package luatex.def Info: Images/nlgeom_si_ig.pdf  used on input line 1373.
+(luatex.def)             Requested size: 145.03853pt x 58.54445pt.
+<Images/internal_length.pdf, id=57697, 93.72789pt x 34.85374pt>
+File: Images/internal_length.pdf Graphic file (type pdf)
+<use Images/internal_length.pdf>
+Package luatex.def Info: Images/internal_length.pdf  used on input line 1373.
+(luatex.def)             Requested size: 145.03853pt x 53.93921pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1373.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [40
+
+<./Images/nlgeom_si_ig.pdf><./Images/internal_length.pdf>]
+<Images/plot_Load_CMOD_Tfake_edt.pdf, id=57731, 867.16936pt x 316.82146pt>
+File: Images/plot_Load_CMOD_Tfake_edt.pdf Graphic file (type pdf)
+<use Images/plot_Load_CMOD_Tfake_edt.pdf>
+Package luatex.def Info: Images/plot_Load_CMOD_Tfake_edt.pdf  used on input lin
+e 1399.
+(luatex.def)             Requested size: 285.38327pt x 104.26617pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1399.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [41
+
+<./Images/plot_Load_CMOD_Tfake_edt.pdf>]
+<Images/post_processing_technique.pdf, id=57803, 1556.14798pt x 1002.11713pt>
+File: Images/post_processing_technique.pdf Graphic file (type pdf)
+<use Images/post_processing_technique.pdf>
+Package luatex.def Info: Images/post_processing_technique.pdf  used on input li
+ne 1423.
+(luatex.def)             Requested size: 235.01881pt x 151.33559pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1423.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+[42
+
+<./Images/post_processing_technique.pdf>]
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1440.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [43
+
 ]
-<TEMPLATE_IMAGES/MINES.png, id=57696, 1083.04625pt x 340.27126pt>
+<Images/F_Load_X52.pdf, id=57936, 1192.45573pt x 433.62027pt>
+File: Images/F_Load_X52.pdf Graphic file (type pdf)
+<use Images/F_Load_X52.pdf>
+Package luatex.def Info: Images/F_Load_X52.pdf  used on input line 1463.
+(luatex.def)             Requested size: 318.95447pt x 115.9807pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1463.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [44
+
+<./Images/F_Load_X52.pdf>]
+<Images/plot_J-da_ALL_X52.pdf, id=58096, 397.485pt x 433.62pt>
+File: Images/plot_J-da_ALL_X52.pdf Graphic file (type pdf)
+<use Images/plot_J-da_ALL_X52.pdf>
+Package luatex.def Info: Images/plot_J-da_ALL_X52.pdf  used on input line 1489.
+
+(luatex.def)             Requested size: 145.03853pt x 158.22697pt.
+<Images/plot_CTOD-da_ALL_X52.pdf, id=58097, 397.485pt x 433.62pt>
+File: Images/plot_CTOD-da_ALL_X52.pdf Graphic file (type pdf)
+<use Images/plot_CTOD-da_ALL_X52.pdf>
+Package luatex.def Info: Images/plot_CTOD-da_ALL_X52.pdf  used on input line 14
+89.
+(luatex.def)             Requested size: 145.03853pt x 158.22697pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1489.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+[45
+
+<./Images/plot_J-da_ALL_X52.pdf><./Images/plot_CTOD-da_ALL_X52.pdf>]
+<Images/plot_J-da_mDCT2_X52.pdf, id=58142, 361.35pt x 361.35pt>
+File: Images/plot_J-da_mDCT2_X52.pdf Graphic file (type pdf)
+<use Images/plot_J-da_mDCT2_X52.pdf>
+Package luatex.def Info: Images/plot_J-da_mDCT2_X52.pdf  used on input line 151
+9.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/plot_J-da_mDCT5_X52.pdf, id=58143, 361.35pt x 361.35pt>
+File: Images/plot_J-da_mDCT5_X52.pdf Graphic file (type pdf)
+<use Images/plot_J-da_mDCT5_X52.pdf>
+Package luatex.def Info: Images/plot_J-da_mDCT5_X52.pdf  used on input line 151
+9.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/plot_J-da_CT_X52.pdf, id=58144, 361.35pt x 361.35pt>
+File: Images/plot_J-da_CT_X52.pdf Graphic file (type pdf)
+<use Images/plot_J-da_CT_X52.pdf>
+Package luatex.def Info: Images/plot_J-da_CT_X52.pdf  used on input line 1519.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/tab_J-da.pdf, id=58145, 333.34715pt x 87.97731pt>
+File: Images/tab_J-da.pdf Graphic file (type pdf)
+<use Images/tab_J-da.pdf>
+Package luatex.def Info: Images/tab_J-da.pdf  used on input line 1519.
+(luatex.def)             Requested size: 268.59512pt x 70.88802pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1519.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+[46
+
+<./Images/plot_J-da_mDCT2_X52.pdf><./Images/plot_J-da_mDCT5_X52.pdf><./Images/pl
+ot_J-da_CT_X52.pdf><./Images/tab_J-da.pdf>]
+<Images/plot_CTOD-da_mDCT2_X52.pdf, id=58233, 361.35pt x 361.35pt>
+File: Images/plot_CTOD-da_mDCT2_X52.pdf Graphic file (type pdf)
+<use Images/plot_CTOD-da_mDCT2_X52.pdf>
+Package luatex.def Info: Images/plot_CTOD-da_mDCT2_X52.pdf  used on input line 
+1549.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/plot_CTOD-da_mDCT5_X52.pdf, id=58234, 361.35pt x 361.35pt>
+File: Images/plot_CTOD-da_mDCT5_X52.pdf Graphic file (type pdf)
+<use Images/plot_CTOD-da_mDCT5_X52.pdf>
+Package luatex.def Info: Images/plot_CTOD-da_mDCT5_X52.pdf  used on input line 
+1549.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/plot_CTOD-da_CT_X52.pdf, id=58235, 361.35pt x 361.35pt>
+File: Images/plot_CTOD-da_CT_X52.pdf Graphic file (type pdf)
+<use Images/plot_CTOD-da_CT_X52.pdf>
+Package luatex.def Info: Images/plot_CTOD-da_CT_X52.pdf  used on input line 154
+9.
+(luatex.def)             Requested size: 110.79567pt x 110.79329pt.
+<Images/tab_CTOD-da.pdf, id=58236, 321.76874pt x 87.97731pt>
+File: Images/tab_CTOD-da.pdf Graphic file (type pdf)
+<use Images/tab_CTOD-da.pdf>
+Package luatex.def Info: Images/tab_CTOD-da.pdf  used on input line 1549.
+(luatex.def)             Requested size: 268.59512pt x 73.44266pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1549.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [47
+
+<./Images/plot_CTOD-da_mDCT2_X52.pdf><./Images/plot_CTOD-da_mDCT5_X52.pdf><./Ima
+ges/plot_CTOD-da_CT_X52.pdf><./Images/tab_CTOD-da.pdf>]
+<Images/fracture_toughness_exp_sim.pdf, id=58312, 947.52512pt x 433.62027pt>
+File: Images/fracture_toughness_exp_sim.pdf Graphic file (type pdf)
+<use Images/fracture_toughness_exp_sim.pdf>
+Package luatex.def Info: Images/fracture_toughness_exp_sim.pdf  used on input l
+ine 1569.
+(luatex.def)             Requested size: 318.95447pt x 145.96669pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1569.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [48
+
+<./Images/fracture_toughness_exp_sim.pdf>]
+<Images/geo_homothetic.pdf, id=58397, 487.75345pt x 395.27448pt>
+File: Images/geo_homothetic.pdf Graphic file (type pdf)
+<use Images/geo_homothetic.pdf>
+Package luatex.def Info: Images/geo_homothetic.pdf  used on input line 1599.
+(luatex.def)             Requested size: 140.20407pt x 113.61942pt.
+<Images/tab_homo.pdf, id=58398, 189.65004pt x 131.15034pt>
+File: Images/tab_homo.pdf Graphic file (type pdf)
+<use Images/tab_homo.pdf>
+Package luatex.def Info: Images/tab_homo.pdf  used on input line 1599.
+(luatex.def)             Requested size: 145.03853pt x 100.30367pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1599.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+[49
+
+<./Images/geo_homothetic.pdf><./Images/tab_homo.pdf>]
+<Images/geo_size_effect.pdf, id=58444, 487.09995pt x 394.40329pt>
+File: Images/geo_size_effect.pdf Graphic file (type pdf)
+<use Images/geo_size_effect.pdf>
+Package luatex.def Info: Images/geo_size_effect.pdf  used on input line 1623.
+(luatex.def)             Requested size: 140.20407pt x 113.51945pt.
+<Images/tab_size_effect.pdf, id=58445, 193.31218pt x 121.20245pt>
+File: Images/tab_size_effect.pdf Graphic file (type pdf)
+<use Images/tab_size_effect.pdf>
+Package luatex.def Info: Images/tab_size_effect.pdf  used on input line 1623.
+(luatex.def)             Requested size: 145.03853pt x 90.94229pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1623.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [50
+
+<./Images/geo_size_effect.pdf><./Images/tab_size_effect.pdf>]
+<Images/plot_homo_Jda_1_2__1_4.pdf, id=58490, 345.4506pt x 345.4506pt>
+File: Images/plot_homo_Jda_1_2__1_4.pdf Graphic file (type pdf)
+<use Images/plot_homo_Jda_1_2__1_4.pdf>
+Package luatex.def Info: Images/plot_homo_Jda_1_2__1_4.pdf  used on input line 
+1661.
+(luatex.def)             Requested size: 145.03853pt x 145.04082pt.
+<Images/plot_12_5_Jda_1_2__1_4.pdf, id=58491, 345.4506pt x 345.4506pt>
+File: Images/plot_12_5_Jda_1_2__1_4.pdf Graphic file (type pdf)
+<use Images/plot_12_5_Jda_1_2__1_4.pdf>
+Package luatex.def Info: Images/plot_12_5_Jda_1_2__1_4.pdf  used on input line 
+1661.
+(luatex.def)             Requested size: 145.03853pt x 145.04082pt.
+<Images/coeffs_X52.pdf, id=58492, 445.03094pt x 190.79803pt>
+File: Images/coeffs_X52.pdf Graphic file (type pdf)
+<use Images/coeffs_X52.pdf>
+Package luatex.def Info: Images/coeffs_X52.pdf  used on input line 1661.
+(luatex.def)             Requested size: 85.35826pt x 36.59554pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1661.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [51
+
+<./Images/plot_homo_Jda_1_2__1_4.pdf><./Images/plot_12_5_Jda_1_2__1_4.pdf><./Ima
+ges/coeffs_X52.pdf>]
+<Images/plot_geoJ_homo_1_2__1_4.pdf, id=58544, 345.4506pt x 345.4506pt>
+File: Images/plot_geoJ_homo_1_2__1_4.pdf Graphic file (type pdf)
+<use Images/plot_geoJ_homo_1_2__1_4.pdf>
+Package luatex.def Info: Images/plot_geoJ_homo_1_2__1_4.pdf  used on input line
+ 1695.
+(luatex.def)             Requested size: 145.03853pt x 145.04082pt.
+<Images/plot_geoJ_12_5_1_2__1_4.pdf, id=58545, 345.32117pt x 345.4506pt>
+File: Images/plot_geoJ_12_5_1_2__1_4.pdf Graphic file (type pdf)
+<use Images/plot_geoJ_12_5_1_2__1_4.pdf>
+Package luatex.def Info: Images/plot_geoJ_12_5_1_2__1_4.pdf  used on input line
+ 1695.
+(luatex.def)             Requested size: 145.03853pt x 145.09352pt.
+File: Images/coeffs_X52.pdf Graphic file (type pdf)
+<use Images/coeffs_X52.pdf>
+Package luatex.def Info: Images/coeffs_X52.pdf  used on input line 1695.
+(luatex.def)             Requested size: 85.35826pt x 36.59554pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1695.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [52
+
+<./Images/plot_geoJ_homo_1_2__1_4.pdf><./Images/plot_geoJ_12_5_1_2__1_4.pdf>]
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1723.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [53
+
+]
+<Images/plot_comp_homo_q1_q2.pdf, id=58609, 345.3425pt x 345.4506pt>
+File: Images/plot_comp_homo_q1_q2.pdf Graphic file (type pdf)
+<use Images/plot_comp_homo_q1_q2.pdf>
+Package luatex.def Info: Images/plot_comp_homo_q1_q2.pdf  used on input line 17
+57.
+(luatex.def)             Requested size: 136.98274pt x 137.02867pt.
+<Images/plot_comp_12_5_q1_q2.pdf, id=58610, 345.3425pt x 345.4506pt>
+File: Images/plot_comp_12_5_q1_q2.pdf Graphic file (type pdf)
+<use Images/plot_comp_12_5_q1_q2.pdf>
+Package luatex.def Info: Images/plot_comp_12_5_q1_q2.pdf  used on input line 17
+57.
+(luatex.def)             Requested size: 136.98274pt x 137.02867pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1757.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+[54
+
+<./Images/plot_comp_homo_q1_q2.pdf><./Images/plot_comp_12_5_q1_q2.pdf>]
+(./save.toc)
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1770.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [55
+
+]
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1790.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [56
+
+]
+<Images/plot_TDS_WB.pdf, id=58698, 325.97565pt x 328.70068pt>
+File: Images/plot_TDS_WB.pdf Graphic file (type pdf)
+<use Images/plot_TDS_WB.pdf>
+Package luatex.def Info: Images/plot_TDS_WB.pdf  used on input line 1840.
+(luatex.def)             Requested size: 117.5094pt x 118.49265pt.
+<Images/new_BC_CL.pdf, id=58699, 173.95331pt x 263.06097pt>
+File: Images/new_BC_CL.pdf Graphic file (type pdf)
+<use Images/new_BC_CL.pdf>
+Package luatex.def Info: Images/new_BC_CL.pdf  used on input line 1840.
+(luatex.def)             Requested size: 100.7238pt x 152.32259pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1840.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+
+Overfull \vbox (4.35681pt too high) detected at line 1840
+ []
+
+[57
+
+<./Images/plot_TDS_WB.pdf><./Images/new_BC_CL.pdf>]
+<Images/remeshing_ST.pdf, id=58832, 500.84381pt x 659.11351pt>
+File: Images/remeshing_ST.pdf Graphic file (type pdf)
+<use Images/remeshing_ST.pdf>
+Package luatex.def Info: Images/remeshing_ST.pdf  used on input line 1896.
+(luatex.def)             Requested size: 117.5094pt x 154.64026pt.
+<Images/Jda_H2.pdf, id=58833, 189.55557pt x 142.26564pt>
+File: Images/Jda_H2.pdf Graphic file (type pdf)
+<use Images/Jda_H2.pdf>
+Package luatex.def Info: Images/Jda_H2.pdf  used on input line 1896.
+(luatex.def)             Requested size: 151.08315pt x 113.39586pt.
+File: ./TEMPLATE_IMAGES/MINES.png Graphic file (type png)
+<use ./TEMPLATE_IMAGES/MINES.png>
+Package luatex.def Info: ./TEMPLATE_IMAGES/MINES.png  used on input line 1896.
+(luatex.def)             Requested size: 63.37695pt x 19.91684pt.
+ [58
+
+<./Images/remeshing_ST.pdf><./Images/Jda_H2.pdf>]
+<TEMPLATE_IMAGES/MINES.png, id=59040, 1083.04625pt x 340.27126pt>
 File: TEMPLATE_IMAGES/MINES.png Graphic file (type png)
 <use TEMPLATE_IMAGES/MINES.png>
-Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 1381.
+Package luatex.def Info: TEMPLATE_IMAGES/MINES.png  used on input line 1948.
 (luatex.def)             Requested size: 120.8698pt x 37.96992pt.
-<TEMPLATE_IMAGES/MESSIAH.pdf, id=57697, 116.33302pt x 74.58894pt>
+<TEMPLATE_IMAGES/MESSIAH.pdf, id=59041, 116.33302pt x 74.58894pt>
 File: TEMPLATE_IMAGES/MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/MESSIAH.pdf>
-Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 1381.
+Package luatex.def Info: TEMPLATE_IMAGES/MESSIAH.pdf  used on input line 1948.
 (luatex.def)             Requested size: 67.14749pt x 43.05446pt.
-<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=57698, 2799.98439pt x 218.4091pt>
+<TEMPLATE_IMAGES/logos_MESSIAH.pdf, id=59042, 2799.98439pt x 218.4091pt>
 File: TEMPLATE_IMAGES/logos_MESSIAH.pdf Graphic file (type pdf)
 <use TEMPLATE_IMAGES/logos_MESSIAH.pdf>
 Package luatex.def Info: TEMPLATE_IMAGES/logos_MESSIAH.pdf  used on input line 
-1381.
+1948.
 (luatex.def)             Requested size: 335.74263pt x 26.18796pt.
 
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 1381--1381
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 1948--1948
  [] 
  []
 
-[40
+[59
 
 <./TEMPLATE_IMAGES/MINES.png><./TEMPLATE_IMAGES/MESSIAH.pdf><./TEMPLATE_IMAGES/l
 ogos_MESSIAH.pdf>]
@@ -2234,9 +2560,6 @@ ogos_MESSIAH.pdf>]
 
 \openout9 = save.snm
  (./save.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `save.out' has not changed.
 (rerunfilecheck)             Checksum: C5303D133BE4D1C8AE2F47763258F21D;1474.
 Package logreq Info: Writing requests to 'save.run.xml'.
@@ -2245,14 +2568,14 @@ Package logreq Info: Writing requests to 'save.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42144 strings out of 477805
+ 42728 strings out of 477805
  125176,1648299 words of node,token memory allocated
- 4884 words of node memory still in use:
-   68 hlist, 11 vlist, 10 rule, 10 local_par, 10 math, 136 glue, 79 kern, 41 pen
-alty, 65 glyph, 473 attribute, 73 glue_spec, 238 attribute_list, 4 write, 24 pdf
-_literal, 16 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:3,2:892,3:391,4:344,5:248,6:49,7:2367,8:38,9:658,10:17,11:170
- 60328 multiletter control sequences out of 65536+600000
+ 5266 words of node memory still in use:
+   68 hlist, 11 vlist, 10 rule, 10 local_par, 10 math, 136 glue, 111 kern, 41 pe
+nalty, 65 glyph, 547 attribute, 73 glue_spec, 275 attribute_list, 4 write, 24 pd
+f_literal, 16 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 1:3,2:829,3:391,4:344,5:332,6:49,7:3530,8:60,9:658,10:17,11:367
+ 60562 multiletter control sequences out of 65536+600000
  145 fonts using 10459671 bytes
  128i,14n,115p,736b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/t
@@ -2260,25 +2583,26 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on save.pdf (40 pages, 24786425 bytes).
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
+er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on save.pdf (59 pages, 28267094 bytes).
 
-PDF statistics: 57857 PDF objects out of 66169 (max. 8388607)
- 38336 compressed objects within 384 object streams
- 90 named destinations out of 1000 (max. 131072)
+PDF statistics: 59207 PDF objects out of 66169 (max. 8388607)
+ 39267 compressed objects within 393 object streams
+ 128 named destinations out of 1000 (max. 131072)
  313 words of extra memory for PDF output out of 10000 (max. 100000000)
 

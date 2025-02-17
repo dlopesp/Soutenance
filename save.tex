@@ -1314,6 +1314,447 @@
     ] 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Materials and geometries}
+
+    \begin{itemize}
+        \item X52 vintage steel
+        \vspace{0.15cm}
+        \item Tube thickness: 7.92 mm
+        \vspace{0.15cm}
+        \item Tests using standard and sub-size specimens
+        \vspace{0.15cm}
+        \item Pre-cracking and side grooves on both sides with $B_n = 10\%B$
+    \end{itemize}
+    
+    \vspace{0.25cm}
+
+    \begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.9\textwidth]{Images/CT_mDCT_specimens_X52.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Internal length and mesh discretization}
+
+    \begin{itemize}
+        \item \textbf{Nonlocal GTN model with two internal lengths}: 
+        \vspace{0.15cm}
+        \begin{itemize}
+        	\item $\ell_{\kappa}$: accumulated plastic strain (void nucleation)
+        \vspace{0.15cm}
+        \item $\ell_{\omega}$: plastic volume change (void growth)
+        \end{itemize}
+        \vspace{0.15cm}
+        \item Typical element size used in local models for pipeline
+steel simulations (\textcolor{gray}{Madi et al., 2020}): $\ell_{\omega} = 100$~$\mu$
+\vspace{0.15cm}
+		\item The length scale associated with quasi-cleavage is
+likely smaller: $\ell_{\kappa} = 33$~$\mu$m
+    \end{itemize}
+
+    \vspace{0.7cm}
+
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/nlgeom_si_ig.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/internal_length.pdf}
+    \end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Crack propagation computation}
+
+\begin{itemize}
+	\item \textbf{Element removal technique}: an element of the mesh is removed when a predefined number of its integration points reach this critical porosity value:
+	\vspace{0.15cm}
+	$$ f_c = 1/q_1 - \epsilon$$	
+	\vspace{0.05cm}
+	\item \textbf{First method:} compliance technique $\rightarrow \Delta a$ is computed at the same way as in the experiments
+	\vspace{0.15cm}
+	\begin{itemize}
+	\item \textbf{Drawback:} the load, hold, and unload steps into simulations significantly increases computation time
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.15cm}
+
+\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.85\textwidth]{Images/plot_Load_CMOD_Tfake_edt.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Crack propagation computation}
+
+\begin{itemize}
+	\item \textbf{Second method:} Post-processing
+	\vspace{0.15cm}
+	\begin{itemize}
+	\item The initial crack front is identified and the porosity values are analyzed on elements in the crack propagation zone
+	\vspace{0.15cm}
+	\item Elements reaching the critical porosity value ($f_c$) are considered broken. The crack front is updated after propagation.
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.15cm}
+
+\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.7\textwidth]{Images/post_processing_technique.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Constituive law}
+
+    \begin{itemize}
+        \item The coefficients of the constitutive law were directly identified using the fracture toughness specimens
+        \vspace{0.35cm}
+        \item Hardening law: 
+        $$\sigma_F(\kappa) = \textrm{max}(340, 243 + 158 (1-\exp(-28.39 \kappa)) + 399 (1-\exp(-269 \kappa)))$$
+        \item Damage coefficients:
+        $$ q_1 = 1.25$$ 
+        $$ q_2 =  1.40$$
+        $$ \dot{f}_n = A_n (\bar{\kappa} > \kappa_c) \dot{\bar{\kappa}} \quad \textrm{with}$$ $$A_n = 1.0 \quad \textrm{and} \quad \kappa_c = 0.15 \rightarrow \textrm{\textbf{High and early void nucleation}}$$
+    \end{itemize}
+
+\end{frame}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results: simulations vs. experiments}
+
+    \begin{itemize}
+        \item Mesh dimensions precisely match the specimen dimensions for each test
+        \vspace{0.15cm}
+        \item An elasto-plastic model fails to accurately represent the fracture toughness test once crack propagation begins
+        
+    \end{itemize}
+
+\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/F_Load_X52.pdf} \\
+        \end{tabular}
+    \end{figure}
+    
+    \begin{textblock}{6}(6.5,13.25)
+        \textcolor{gray}{\scriptsize (Experimental data: L. Santana)}
+    \end{textblock}
+
+\end{frame}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results: simulations vs. experiments}
+
+\begin{itemize}
+    \item Crack propagation initiates later for the simulations $\rightarrow$ This delay was partially addressed by reducing the void nucleation threshold
+    \vspace{0.15cm}
+    \item $J$ and $\delta$ (CTOD) values increase as specimen size decreases
+\end{itemize}
+
+\begin{columns}
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/plot_J-da_ALL_X52.pdf}
+    
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/plot_CTOD-da_ALL_X52.pdf}
+\end{columns}
+
+	\begin{textblock}{6}(6.35,14.75)
+        \textcolor{gray}{\scriptsize (Experimental data: L. Santana)}
+    \end{textblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results: simulations vs. experiments}
+
+    \begin{columns}
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_J-da_mDCT2_X52.pdf}
+        
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_J-da_mDCT5_X52.pdf}
+
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_J-da_CT_X52.pdf}
+    \end{columns}
+
+    \begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.8\textwidth]{Images/tab_J-da.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+    \begin{textblock*}{7cm}(3.25cm,8.7cm)
+        \small Construction line: $J = 2 \sigma_Y \Delta a$ (ASTM E1820)
+    \end{textblock*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results: simulations vs. experiments}
+
+    \begin{columns}
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_CTOD-da_mDCT2_X52.pdf}
+        
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_CTOD-da_mDCT5_X52.pdf}
+
+        \column{0.33\textwidth}
+        \centering
+        \includegraphics[width=1.0\textwidth]{Images/plot_CTOD-da_CT_X52.pdf}
+    \end{columns}
+
+    \begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.8\textwidth]{Images/tab_CTOD-da.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+    \begin{textblock*}{7cm}(3.25cm,8.7cm)
+        \small Construction line: $\delta = 1.4 \Delta a$ (ASTM E1820)
+    \end{textblock*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Results: $J$ vs. $\delta$}
+
+\begin{itemize}
+	\item $J$ and $\delta$ provide overall good predictions of the experimental results
+	\vspace{0.15cm}
+	\item In experiments, $\delta$ is often \textbf{easier to correlate} with observed crack propagation $\rightarrow$ \textbf{Directly measure}
+	\vspace{0.15cm}
+	\item The $J$-integral relies on energy-based calculations that may not always align precisely with observed behavior
+\end{itemize}
+
+\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/fracture_toughness_exp_sim.pdf} \\
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+\textcolor{MINESBlue}{\textbf{\large Homothetic specimens:}}
+\vspace{0.15cm}
+    \begin{itemize}
+        \item \textbf{Homothetic CT specimens} $\rightarrow$ Dimensions scaled systematically from the smallest to the largest
+        \vspace{0.15cm}
+        \item $B/W = 0.5$ for all cases
+%        \vspace{0.15cm}
+%        \item All specimens include side grooves on both sides corresponding to $10\%B$
+        \vspace{0.15cm}
+        \item Each mesh was generated individually, ensuring correct element size with respect to the internal length
+    \end{itemize}
+
+    \vspace{0.2cm}
+
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.87\textwidth]{Images/geo_homothetic.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/tab_homo.pdf}
+    \end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+\textcolor{MINESBlue}{\textbf{\large Varying thickness:}}
+\vspace{0.3cm}
+\begin{itemize}
+        \item \textbf{Varying thickness} $\rightarrow$ Specimen with the dimensions corresponding to a CT-12.5 with different thickness values
+    \end{itemize}
+
+    \vspace{0.5cm}
+
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.87\textwidth]{Images/geo_size_effect.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/tab_size_effect.pdf}
+    \end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+    \begin{itemize}
+    	\item Coefficients identified for the X52 steel
+    	\vspace{0.2cm}
+        \item \textbf{Homothetic specimens:} Minor effect on toughness
+        \vspace{0.2cm}
+        \item \textbf{Varying thickness:} Toughness decreased with thickness
+    \end{itemize}
+
+    \vspace{0.15cm}
+
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/plot_homo_Jda_1_2__1_4.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/plot_12_5_Jda_1_2__1_4.pdf}
+    \end{columns}
+
+    \begin{textblock*}{3cm}(9.5cm,1.5cm) % Taille et position de l'image
+        \includegraphics[width=3cm]{Images/coeffs_X52.pdf}
+    \end{textblock*}
+
+    \begin{textblock*}{5cm}(2.2cm,8.75cm)
+        \small Homothetic specimens
+    \end{textblock*}
+
+    \begin{textblock*}{5cm}(8.5cm,8.75cm)
+        \small Varying thickness
+    \end{textblock*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+    \begin{itemize}
+        \item Size and thickness effect on $J_{0.2}$ and $J_{0.5}$:
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/plot_geoJ_homo_1_2__1_4.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/plot_geoJ_12_5_1_2__1_4.pdf}
+    \end{columns}
+
+    \begin{textblock*}{3cm}(9.5cm,1.5cm) % Taille et position de l'image
+        \includegraphics[width=3cm]{Images/coeffs_X52.pdf}
+    \end{textblock*}
+
+    \begin{textblock*}{5cm}(2.2cm,8.35cm)
+        \small Homothetic specimens
+    \end{textblock*}
+
+    \begin{textblock*}{5cm}(8.5cm,8.35cm)
+        \small Varying thickness
+    \end{textblock*}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+	\textcolor{MINESBlue}{\textbf{\large Varying damage coefficients:}}
+	\vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Hardening law:} same as the X52
+        \vspace{0.5cm}
+        \item \textbf{GTN's coefficients:}
+        \vspace{0.2cm}
+        \begin{itemize}
+            \item $q_1 = 1.5$, $q_2 = 1.0$ $\rightarrow$ \textbf{Most ductile case}
+            \vspace{0.2cm}
+            \item $q_1 = 1.9$, $q_2 = 1.0$
+            \vspace{0.2cm}
+            \item $q_1 = 2.0$, $q_2 = 1.5$ $\rightarrow$ \textbf{Less ductile case}
+        \end{itemize}
+        \vspace{0.4cm}
+        \item $\uparrow q_1$: increases void growth sensitivity, causing earlier growth and \textbf{reduced ductility}
+        \vspace{0.2cm}
+        \item $\uparrow q_2$: accelerates coalescence, leading to early crack initiation, \textbf{reduced ductility}, and abrupt fracture
+        \vspace{0.2cm}
+        \item \textbf{Low void nucleation:} $A_n$ = 0.2 and $\kappa_c$ = 0.8
+    \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Parametrical study}
+
+	\textcolor{MINESBlue}{\textbf{\large Varying damage coefficients:}}
+	\vspace{0.2cm}
+	\normalsize
+	\begin{itemize}
+		\item Homothetic specimens exhibit more stable toughness values
+		\vspace{0.15cm}
+		\item More ductile material present more size effects
+		\vspace{0.15cm}
+		\item Even tests considered valid according to the standard can still display size effects
+	\end{itemize}
+    \begin{columns}
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{Images/plot_comp_homo_q1_q2.pdf}
+        
+        \column{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{Images/plot_comp_12_5_q1_q2.pdf}
+    \end{columns}
+    
+    \begin{textblock*}{5cm}(2.2cm,8.95cm)
+        \small Homothetic specimens
+    \end{textblock*}
+
+    \begin{textblock*}{5cm}(8.65cm,8.95cm)
+        \small Varying thickness
+    \end{textblock*}
+    
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1326,6 +1767,132 @@
     sectionstyle=show/shaded, 
     subsectionstyle=show/shaded, 
     ] 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Conclusions}
+
+\begin{itemize}
+
+	\item \textbf{Comprehensive HE modeling:} Developed a numerical framework integrating hydrogen diffusion, plasticity, and damage mechanisms.
+	\vspace{0.15cm}
+	\item \textbf{Modified nonlocal GTN model:} Incorporated hydrogen-enhanced decohesion (HEDE) and diffusion effects, accelerating damage evolution and leading to premature failure.
+	\vspace{0.15cm}
+	\item \textbf{Experimental validation \& trends:} Applied the model to pressurized disk, tensile, and fracture toughness tests, accurately capturing key experimental trends such as toughness and ductility loss, strain rate effects, and the transition from ductile to quasi-brittle failure.
+	\vspace{0.15cm}
+	\item \textbf{Fracture toughness \& size effects:} Investigated the influence of specimen size and thickness on fracture toughness across different material configurations.
+	\vspace{0.15cm}
+	\item \textbf{\textcolor{MINESBlue}{Key contributions:}} Provided a robust framework for HE simulation, improving understanding of hydrogen-induced damage in pipeline steels.
+	
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Perspectives}
+
+    \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Thermal Desorption Spectroscopy (TDS) simulations and tests:} 
+				\vspace{0.15cm}
+				\begin{itemize}
+					\item Conduct TDS tests to identify the various trapping sites.
+					\vspace{0.15cm}
+					\item Simulate desorption curves under varying conditions. 
+					\vspace{0.15cm}
+					\item Consider implementing the McNabb-Foster model for improved peak predictions.
+				\end{itemize}
+			\end{itemize}
+			
+			\begin{figure}
+        		\begin{tabular}{c}
+            		\includegraphics[width=0.7\textwidth]{Images/plot_TDS_WB.pdf} \\
+        		\end{tabular}
+    		\end{figure}
+    		
+    	\end{column}
+    		
+% -------------------------------------------------------
+
+        \begin{column}{0.5\textwidth}
+        
+        \begin{itemize}
+        	\item \textbf{Hydrogen boundary condition:}
+        	\vspace{0.15cm}
+        	\begin{itemize}
+        		\item Implementation of a new boundary condition that accounts for the newly created surfaces during crack propagation.
+        	\end{itemize}
+        \end{itemize}
+        \vspace{0.2cm}
+        	\begin{figure}
+        		\begin{tabular}{c}
+            		\includegraphics[width=0.6\textwidth]{Images/new_BC_CL.pdf} \\
+        		\end{tabular}
+    		\end{figure}
+        \end{column}
+
+    \end{columns}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Perspectives}
+
+    \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+        
+        \begin{itemize}
+        	\item \textbf{Remeshing for crack propagation:}
+        	\vspace{0.15cm}
+			\begin{itemize}
+				\item Improve the remeshing framework to better handle 3D non-axisymmetric specimens.
+			\end{itemize}			        	
+        \end{itemize}
+        	\begin{figure}
+        		\begin{tabular}{c}
+            		\includegraphics[width=0.7\textwidth]{Images/remeshing_ST.pdf} \\
+        		\end{tabular}
+    		\end{figure}
+    		
+    \begin{textblock}{6}(2.5,14.8)
+        \textcolor{gray}{\scriptsize (El Ouzani Tuhami \textit{et al., 2022)}}
+   	\end{textblock}
+    		
+    	\end{column}
+    		
+% -------------------------------------------------------
+
+        \begin{column}{0.5\textwidth}
+        \begin{itemize}
+        	\item \textbf{Size effect \& HE:}
+        	\vspace{0.15cm}
+        	\begin{itemize}
+        		\item Extend the study of hydrogen embrittlement in sub-size fracture toughness specimens.
+        		\vspace{0.15cm}
+        		\item Analyze the interplay between size effects and hydrogen-induced damage.
+        	\end{itemize} 
+        \end{itemize}
+        \vspace{0.2cm}
+        \begin{figure}
+        		\begin{tabular}{c}
+            		\includegraphics[width=0.9\textwidth]{Images/Jda_H2.pdf} \\
+        		\end{tabular}
+    		\end{figure}
+      
+    \begin{textblock}{6}(10.5,14.8)
+        \textcolor{gray}{\scriptsize (Experimental data: L. Santana)}
+   	\end{textblock}      
+      
+        \end{column}
+
+    \end{columns}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
