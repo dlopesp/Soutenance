@@ -117,12 +117,41 @@
 \begin{frame}{Main objectives}
 
 \begin{itemize}
-    \item Develop a model coupling \textbf{plasticity}, \textbf{damage}, and \textbf{hydrogen diffusion}
-    \vspace{0.15cm}
-    \item Validate the model against experimental data
-    \vspace{0.15cm}
-    \item Simulate size and thickness effects on toughness using sub-size specimens
+    \item \textbf{Hydrogen embrittlement:}
+    \vspace{0.2cm}
+    \begin{itemize}
+    	\item Develop a model coupling plasticity, damage, and hydrogen diffusion
+    	\vspace{0.2cm}
+    	\item Reproduce the degradation of the material’s mechanical properties, ductility and toughness loss, multi-crack initiation
+    \end{itemize}
+    
+    \vspace{0.2cm}
+    
+    \item \textbf{Fracture toughness simulations:}
+
+	\vspace{0.2cm}    
+    
+    \begin{itemize}
+    	\item Analyze the effect of the specimen's size and thickness on fracture toughness through numerical simulations
+    \end{itemize}
+    
+    \vspace{0.2cm}
+   	\item \textbf{Validate the model against experimental data}
 \end{itemize}
+
+\vspace{3.25cm}
+
+	\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=3cm, yshift=2.25cm] {\includegraphics[width=4.5cm]{Images/tensile_test.pdf}}; 
+    \end{tikzpicture}
+    
+	\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=9cm, yshift=1.8cm] {\includegraphics[width=5.5cm]{Images/fracture_surface_2.pdf}}; 
+    \end{tikzpicture}
+    
+	\begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.5cm, yshift=4cm] {\includegraphics[width=2.5cm]{Images/CT_mDCT.png}}; 
+    \end{tikzpicture}
 
 % Say that this model not only allows the prediction of hydrogen assisted failure, but also to estimate the hydrogen distribution during loading and it can help interpreting experiments
 % Add figures and animations from TISD ?
@@ -1162,7 +1191,7 @@
 
             \begin{figure}
                 \begin{tabular}{c}
-                    \includegraphics[width=0.9\textwidth]{Images/fig_disk_tP.pdf}\\
+                    \includegraphics[width=0.95\textwidth]{Images/fig_disk_tP.pdf}\\
                 \end{tabular}
             \end{figure}
 
@@ -1171,7 +1200,7 @@
         \begin{column}{0.55\textwidth}
             \begin{figure}
                 \begin{tabular}{c}
-                    \includegraphics[width=0.9\textwidth]{Images/fig_iso_values_disk.pdf}\\
+                    \includegraphics[width=0.95\textwidth]{Images/fig_iso_values_disk.pdf}\\
                 \end{tabular}
             \end{figure}
         \end{column}
@@ -1195,22 +1224,22 @@
 
     \begin{columns}
 
-        \begin{column}{0.45\textwidth}
+        \begin{column}{0.5\textwidth}
 
             \begin{figure}
                 \begin{tabular}{c}
-                    \includegraphics[width=0.9\textwidth]{Images/fig_disk_Pr_edt.pdf}\\
+                    \includegraphics[width=0.95\textwidth]{Images/fig_disk_Pr_edt.pdf}\\
                 \end{tabular}
             \end{figure}
 
-            \centering \hspace{0.8cm} \scriptsize \textcolor{gray}{(Experimental data: Briottet \textit{et al.}, 2012)}
+            \centering \hspace{0.9cm} \scriptsize \textcolor{gray}{(Experimental data: Briottet \textit{et al.}, 2012)}
 
         \end{column}
     
-        \begin{column}{0.55\textwidth}
+        \begin{column}{0.5\textwidth}
             \begin{figure}
                 \begin{tabular}{c}
-                    \includegraphics[width=0.9\textwidth]{Images/C_P_rate.pdf}\\
+                    \includegraphics[width=0.95\textwidth]{Images/C_P_rate.pdf}\\
                 \end{tabular}
             \end{figure}
         \end{column}
@@ -1377,7 +1406,7 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
 \begin{frame}{Crack propagation computation}
 
 \begin{itemize}
-	\item \textbf{Element removal technique}: an element of the mesh is removed when a predefined number of its integration points reach this critical porosity value:
+	\item \textbf{Element removal technique}: an element of the mesh is removed when a predefined number of its integration points reach a critical porosity value:
 	\vspace{0.15cm}
 	$$ f_c = 1/q_1 - \epsilon$$	
 	\vspace{0.05cm}
@@ -1428,7 +1457,9 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
 
     \begin{itemize}
         \item The coefficients of the constitutive law were directly identified using the fracture toughness specimens
-        \vspace{0.35cm}
+        \vspace{0.2cm}
+        \item The hardening law is slightly different from the one previously presented $\rightarrow$ Dispersion observed for the X52 steel
+        \vspace{0.2cm}
         \item Hardening law: 
         $$\sigma_F(\kappa) = \textrm{max}(340, 243 + 158 (1-\exp(-28.39 \kappa)) + 399 (1-\exp(-269 \kappa)))$$
         \item Damage coefficients:
