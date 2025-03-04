@@ -11,8 +11,10 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{pdfpages}
+\usepackage{eurosym}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{animate}
+\usepackage{textcomp}
 \usepackage{booktabs}
 \usepackage{verbatim}
 \usepackage{biblatex}
@@ -32,7 +34,7 @@
 \subtitle{\LARGE Finite element models for the study of hydrogen embrittlement of steel structures}
 
 \institute
-{\textbf{Academic advisor}: Jacques BESSON \textsuperscript{1} \\
+{\textbf{Thesis director}: Jacques BESSON \textsuperscript{1} \\
 \vspace{0.25cm}
 \textbf{Industrial advisor}: Nikolay OSIPOV \textsuperscript{2} \\
 \vspace{0.4cm}
@@ -61,7 +63,7 @@
 		\vspace{0.15cm}
 		\item Hydrogen can be produced from other \textbf{renewable sources}, such as wind and solar
 		\vspace{0.15cm}
-		\item Hydrogen transport using \textbf{existing natural gas pipelines} (40,000 km in France, €50 billion in assets, up to 80 years old) is a proposal for hydrogen transport
+		\item Hydrogen transport using \textbf{existing natural gas pipelines} (40,000 km in France, \texteuro 50 billion in assets, up to 80 years old) is a proposal for hydrogen transport
     \end{itemize}
     
     \vspace{0.2cm}
@@ -99,7 +101,7 @@
 \begin{frame}{Background and challenges}
 
 \begin{itemize}
-    \item Experimental observations show that \textbf{toughness decreases with increasing specimen thickness} until reaching a plateau
+    \item Transferability from sub-size specimens to a full scale structure $\rightarrow$ \textbf{Specimen size significantly influences toughness}
     \vspace{0.15cm}
     \item Beyond a critical thickness, toughness becomes relatively insensitive to further increases
 \end{itemize}
@@ -342,7 +344,7 @@
     \begin{itemize}
         \item Fully implicit finite strain framework
         \vspace{0.1cm}
-        \item Based on a mixed formulation: $\underline{u}, P, \theta$ (\textcolor{darkgray}{Zhang \textit{et al.} 2017}) and $C_L$ 
+        \item Based on a mixed formulation: $\underline{u}, p, \theta$ (\textcolor{darkgray}{Zhang \textit{et al.} 2017}) and $C_L$ 
         \vspace{0.1cm}
         \item Quadratic elements with reduced integration
         \vspace{0.1cm}
@@ -374,7 +376,7 @@
 \begin{frame}{$\boldsymbol{B}$-bar formulation}
     
 	\begin{itemize}
-		\item The use of \textbf{quadratic elements} with additional dofs lead to \\ \textbf{high simulation times}
+		\item The use of \textbf{quadratic elements} with additional dofs can be very \\ \textbf{time consuming}
 		\vspace{0.25cm}
 		\item $\boldsymbol{B}$-bar (or $\boldsymbol{\bar{B}}$) formulation (\textcolor{darkgray}{Hughes, 1980}): 
 		\vspace{0.25cm}
@@ -385,8 +387,8 @@
 			$$\boldsymbol{\bar{B}} = \boldsymbol{B}_d + \boldsymbol{\bar{B}}_h$$
 			\vspace{0.05cm}
 			\item To avoid extrapolating $p$ to the nodes for $\nabla p$ computation, it is considered as a dof
-			\vspace{0.05cm}
-			$$ \min(P_{pg} - N \cdot P_n)^2 $$
+%			\vspace{0.05cm}
+%			$$ \min(P_{pg} - N \cdot P_n)^2 $$
 		\end{itemize}
 	\end{itemize}	
 	
@@ -501,11 +503,11 @@
 	\vspace{2.65cm}
 	
 	\begin{tikzpicture}[remember picture, overlay]
-    	\node at (current page.south west) [xshift=4.5cm, yshift=2cm] {\includegraphics[width=6cm]{Images/comp_ft.pdf}}; 
+    	\node at (current page.south west) [xshift=4.5cm, yshift=2.1cm] {\includegraphics[width=6cm]{Images/comp_ft.pdf}}; 
     \end{tikzpicture}
     
     \begin{tikzpicture}[remember picture, overlay]
-    	\node at (current page.south west) [xshift=10.5cm, yshift=3cm] {\includegraphics[width=4cm]{Images/elements.pdf}}; 
+    	\node at (current page.south west) [xshift=10.5cm, yshift=3.1cm] {\includegraphics[width=4cm]{Images/elements.pdf}}; 
     \end{tikzpicture}
 
 \end{frame}
@@ -701,7 +703,7 @@
     \end{tikzpicture}
     
     \begin{textblock}{6}(5.75,14.75)
-        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al.}, 2024)}
     \end{textblock}
 
 \end{frame}
@@ -716,7 +718,7 @@
 \end{figure}
 
     \begin{textblock}{6}(5.75,14.9)
-        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al.}, 2024)}
     \end{textblock}
 
 \end{frame}
@@ -731,7 +733,7 @@
 \end{figure}
 
     \begin{textblock}{6}(5.75,14.95)
-        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al., 2024)}}
+        \textcolor{gray}{\scriptsize (Experimental data: Santana \textit{et al.}, 2024)}
     \end{textblock}
 
 \end{frame}
@@ -745,7 +747,7 @@
 	\vspace{0.1cm}
 	\item Trap binding energies ($W_B$) and trap densities ($N_T$) were taken from the literature and analyzed based on the experimental observations
 	\vspace{0.1cm}
-	\item Based on the models proposed by \textcolor{darkgray}{Moro \textit{et al.} (2010)} and \textcolor{darkgray}{Kumnick \textit{et al.} (1980)}, four cases emerge
+	\item Based on the models proposed by \textcolor{darkgray}{Moro \textit{et al.} (2010)} and \textcolor{darkgray}{Sofronis \textit{et al.} (1980)}, four cases emerge
 \end{itemize}
 
 \begin{columns}
@@ -772,7 +774,7 @@
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{Images/table_zoom.pdf} \\
+	\includegraphics[width=0.9\textwidth]{Images/table_zoom.png} \\
 \end{figure}
 
 \end{frame}
@@ -1209,6 +1211,10 @@
     
     \end{columns}
     
+    \begin{tikzpicture}[remember picture, overlay]
+    	\node at (current page.south west) [xshift=10.5cm, yshift=7cm] {\includegraphics[width=2.25cm]{Images/machine_DPT_2.jpg}}; 
+    \end{tikzpicture}
+    
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1300,7 +1306,7 @@
     \begin{itemize}
         \item Crack length: post-processing considering broken elements $f_* = 0.99 \times 1/q_1$
         \vspace{0.15cm}
-        \item $J$ computation: ASTM E1820 standard considering the simulated Load-CMOD curve
+        \item $J$-integral computation: ASTM E1820 standard considering the simulated Load-CMOD curve
     \end{itemize}
 
 \vspace{5cm}
@@ -1317,7 +1323,7 @@
     
     \node at (current page.south west) [xshift=9.5cm, yshift=3.4cm]{
         \includemedia[
-        width=0.55\textwidth,
+        width=0.5\textwidth,
         activate=onclick,
         passcontext, % Keep the \pause, etc. working in overlays
         addresource=Images/anim_CT/output.mp4, % chemin de votre fichier vidéo
@@ -1326,9 +1332,13 @@
             &autoPlay=true     % autoplay de la vidéo
             &loop=true         % lire en boucle
         }
-    ]{\includegraphics[width=0.55\textwidth]{Images/anim_CT/anim00.png}}{VPlayer.swf}};
+    ]{\includegraphics[width=0.55\textwidth]{Images/CT_CL.pdf}}{VPlayer.swf}};
 
 \end{tikzpicture}
+
+\begin{textblock}{10}(8.5,6.6)
+        \small Hydrogen diffusion through the crack lips:
+    \end{textblock}
     
 \end{frame}
 
@@ -1357,6 +1367,8 @@
         \item Tests using standard and sub-size specimens
         \vspace{0.15cm}
         \item Pre-cracking and side grooves with $B_n = 10\%B$ at each side
+        \vspace{0.15cm}
+        \item Experiments and simulations \textbf{without hydrogen}
     \end{itemize}
     
     \vspace{0.25cm}
@@ -1382,8 +1394,8 @@
         \item $\ell_{\omega}$: plastic volume change (void growth)
         \end{itemize}
         \vspace{0.15cm}
-        \item Typical element size used in local models for pipeline
-steel simulations (\textcolor{gray}{Madi et al., 2020}): $\ell_{\omega} = 100$~$\mu$
+        \item Typical element size used in nonlocal models for pipeline
+steel simulations (\textcolor{gray}{Madi et al., 2020}): $\ell_{\omega} = 100$~$\mu$m
 \vspace{0.15cm}
 		\item The length scale associated with secondary nucleation is
 likely smaller: $\ell_{\kappa} = 33$~$\mu$m
@@ -1439,7 +1451,7 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
 	\begin{itemize}
 	\item The initial crack front is identified and the porosity values are analyzed on elements in the crack propagation zone
 	\vspace{0.15cm}
-	\item Elements reaching the critical porosity value ($f_c$) are considered broken. The crack front is updated after propagation.
+	\item Elements with integration points reaching the critical porosity value ($f_c$) are considered broken. The crack front is updated after propagation.
 	\end{itemize}
 \end{itemize}
 
@@ -1793,7 +1805,7 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
 	\vspace{0.15cm}
 	\item \textbf{Fracture toughness \& size effects:} Investigated the influence of specimen size and thickness on fracture toughness across different material configurations.
 	\vspace{0.15cm}
-	\item \textbf{\textcolor{MINESBlue}{Key contributions:}} Provided a robust framework for HE simulation, improving understanding of hydrogen-induced damage in pipeline steels.
+	\item \textbf{\textcolor{MINESBlue}{Key contributions:}} Provided a comprehensive framework for HE simulation, improving understanding of hydrogen-induced damage in pipeline steels.
 	
 \end{itemize}
 
@@ -1808,23 +1820,23 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
         \begin{column}{0.5\textwidth}
 			\begin{itemize}
 				\item \textbf{Thermal Desorption Spectroscopy (TDS) simulations and tests:} 
-				\vspace{0.15cm}
+				\vspace{0.25cm}
 				\begin{itemize}
 					\item Conduct TDS tests to identify the various trapping sites.
-					\vspace{0.15cm}
+					\vspace{0.2cm}
 					\item Simulate desorption curves under varying conditions. 
-					\vspace{0.15cm}
-					\item Consider implementing the McNabb-Foster model for improved peak predictions.
 				\end{itemize}
 			\end{itemize}
 			
 			\begin{figure}
         		\begin{tabular}{c}
-            		\includegraphics[width=0.7\textwidth]{Images/plot_TDS_WB.pdf} \\
+            		\includegraphics[width=0.8\textwidth]{Images/plot_TDS_WB.pdf} \\
         		\end{tabular}
     		\end{figure}
     		
     	\end{column}
+    	
+    	\vspace{0.2cm}
     		
 % -------------------------------------------------------
 
@@ -1871,7 +1883,7 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
     		\end{figure}
     		
     \begin{textblock}{6}(2.5,14.8)
-        \textcolor{gray}{\scriptsize (El Ouzani Tuhami \textit{et al., 2022)}}
+        \textcolor{gray}{\scriptsize (El Ouzani Tuhami \textit{et al.}, 2022)}
    	\end{textblock}
     		
     	\end{column}
@@ -1956,5 +1968,205 @@ likely smaller: $\ell_{\kappa} = 33$~$\mu$m
     \end{figure}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Effect of traps on hydrogen diffusion}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/effect_traps.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Appendix}
+
+\begin{frame}[noframenumbering]{Effect of traps on hydrogen diffusion}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/effect_traps_2.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Appendix}
+
+\begin{frame}[noframenumbering]{Effect of $W_B$ on hydrogen diffusion}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/permeation_WB.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Appendix}
+
+\begin{frame}[noframenumbering]{DPT - Notched specimen}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.95\textwidth]{Images/03_C_scale.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Damage evolution}
+
+    \begin{itemize}
+        \item The introduction of the variable $f_{\ast}$ allows for simulating the \textbf{rapid increase in porosity during the void coalescence phase}
+        \vspace{0.15cm}
+        \item $f_c$: porosity when coalescence starts
+        \vspace{0.15cm}
+        \item $f_R$: final porosity for ductile failure
+        \vspace{0.15cm}
+        \item $f_R^{\ast} = 1/q_1$
+    \end{itemize}
+
+    \begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.8\textwidth]{Images/fstar.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Hydrogen concentrations}
+
+    \textbf{Lattice concentration:}\\
+    
+    \begin{equation*}
+        \boxed{C_L = \beta N_L \theta_L}
+    \end{equation*}\\
+    
+    \begin{itemize}
+        \item $\beta$: number of NILS per solvent atom ( = 6)\\
+        \item $N_L$: number of solvent lattice atoms per unit lattice volume \\
+        \item $\theta_L$: occupancy of the lattice sites 
+    \end{itemize}
+
+    \vspace{0.5cm}
+
+    \textbf{Trapped concentration:}\\
+
+    \begin{equation*}
+        \boxed{C_T = \alpha N_T \theta_T}
+    \end{equation*}\\
+    
+    \begin{itemize}
+        \item $\alpha$: number of hydrogen atom sites per trap ( = 1) \\
+        \item $N_T$: number of traps per unit lattice volume \\
+        \item $\theta_T$: occupancy of the trapping sites 
+    \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Model correction}
+
+    \textbf{Correction carried out by Krom \textit{et al.} (1999):}
+
+    \vspace{0.3cm}
+
+    \begin{equation*}
+        {\frac{d}{dt} \int_V (C_L + C_T) dV + \int_S J \cdot n \ dS = 0}
+    \end{equation*}
+
+    \vspace{0.3cm}
+
+    \begin{equation*}
+        \frac{\partial C_T}{\partial t} = \frac{\partial C_T}{\partial C_L} \frac{\partial C_L}{\partial t} + \underbrace{\textcolor{red}{\frac{\partial C_T}{\partial N_T} \frac{d N_T}{d \varepsilon_p} \frac{\partial \varepsilon_p}{\partial t}}}_{\textcolor{red}{\textrm{{Added term}}}}
+    \end{equation*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Oxide layer}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.6\textwidth]{Images/adsoprtion.png}
+        \end{tabular}
+    \end{figure}
+    
+    \begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.6\textwidth]{Images/oxide_surface.png}        		\end{tabular}
+    \end{figure}
+    
+    \begin{textblock}{6}(6,14.8)
+        \textcolor{gray}{\scriptsize (Liu \textit{et al.}, 2023)}
+   	\end{textblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Oxide layer}
+
+    \begin{columns}
+
+        % Column 1
+        \begin{column}{0.5\textwidth} 
+        \begin{itemize}
+            \item \textbf{Flux resistance:} The oxide layer on the surface
+             creates an interfacial resistance to hydrogen penetration
+             \vspace{0.5cm}
+            \begin{equation*}
+                \boxed{J_n = R_H (C_L^{\infty} - C_L)}
+            \end{equation*}
+            \vspace{0.15cm}
+            \item $R_H = R_H(\kappa)$ to represent the rupture of the oxide layer
+        \end{itemize}
+    \end{column}
+
+        % Column 2
+        \begin{column}{0.5\textwidth} 
+            \begin{figure}
+                \begin{tabular}{c}
+                \includegraphics[width=\textwidth]{Images/oxide_layer.png} \\
+                \end{tabular}
+            \end{figure}
+        \end{column}
+
+    \end{columns}
+    
+\end{frame}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[noframenumbering]{Disk mesh}
+
+	\begin{figure}
+        \begin{tabular}{c}
+            \includegraphics[width=0.85\textwidth]{Images/disk_mesh.pdf}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
